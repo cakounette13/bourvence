@@ -1,0 +1,400 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* général */
+body {
+	color: #573B50 !important;
+	background-color: #F3EEE9 !important;
+	font-family: source sans pro, sans-serif !important;
+	margin: auto !important;
+	font-size: 20px !important;
+}
+
+h1 {
+	font-size: 45px !important;
+	font-weight: bolder !important;
+	text-decoration: underline;
+	margin-bottom: 40px !important;
+}
+
+h2 {
+	font-size: 35px !important;
+	font-weight: bolder !important;
+	margin: 40px !important;
+	position: relative;
+}
+
+h3 {
+	font-size: 25px !important;
+	font-weight: bolder !important;
+	margin: 40px !important;
+}
+
+h4 {
+	font-size: 20px !important;
+	font-weight: bolder !important;
+}
+
+.line {
+    margin: 15px 0 21px;
+    width: 100%;
+    background: rgba(87, 59, 80, 0.2);
+    height: 1px;
+    position: relative;
+    text-align: center;
+}
+
+/* menu de navigation page accueil*/
+.navbar {
+	padding: 0 !important;
+}
+
+.navbar-nav {
+	margin: 20px 40px 30px 20px;
+} 
+
+.navbar-toggler {
+	margin: 20px 40px 10px 20px;
+}
+
+a {
+	color: #573B50 !important;
+	text-decoration: none !important;
+}
+
+li {
+	list-style: none;
+}
+
+.nav-item {
+	border-right: solid 2px #573B50 !important;
+	color: #573B50 !important;
+	background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.nav-item:last-child {
+	border-right: none !important;
+}
+
+.nav-link {
+	font-weight: bold;
+	&:hover {
+		background-color: rgba(87, 59, 80, 0.5);
+		color: #F3EEE9 !important;
+	}
+}
+
+.dropdown-menu {
+	font-size: 20px !important;
+	padding: 0px !important;
+}
+
+.dropdown-menu:active {
+	background-color: #F3EEE9 !important;
+	font-size: 20px;
+}
+
+.dropdown-item:hover {
+	background-color: rgba(87, 59, 80, 0.5) !important;
+	color: #F3EEE9 !important;
+	font-weight: bold;
+}
+
+.nav-link {
+	padding: 5px 15px !important;
+}
+
+/* Barre de recherche */
+.search, .navbar-nav{
+	width: 100%;
+}
+
+form.search {
+	text-align: right;
+	margin: 20px 20px 30px 0;
+	margin-bottom: 30px ;
+}
+
+#search {
+	border-radius: 20px;
+	padding: 10px 0 10px 20px;
+	width: 300px;
+	height: 30px;
+	background-color: #FFFFFF;
+}
+
+/* caroussel par accueil */
+.carousel-item.bg-body{
+	background-color: #F3EEE9 !important;
+}
+
+.carousel-inner {
+	min-height: 600px;
+}
+
+.carousel-text {
+	z-index: 1;
+	position: relative;
+	top: 200px;
+	float: right;
+	width: 50%;
+	right: 40px;
+	background-color: #573B50 !important;
+	padding: 20px;
+	h2 {
+		margin-top: 0 !important;
+		color: #FFFFFF;
+	}
+	p {
+		margin-bottom: 0;
+		color: #FFFFFF;
+	}
+}
+
+.carousel-img {
+	background-color: #F3EEE9 !important;
+	position: absolute;
+	img{
+		width: 60%;
+	}
+}
+
+/* Boutons domaines */
+.btn.btn-bloc {
+	font-size: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #573B50;
+	margin: 0 30px 20px 20px;
+	padding: 25px 40PX;
+	height: 100px !important;
+	box-shadow: -6px 6px 6px rgba(87, 59, 80, 0.4);
+	&:hover {
+		border: 3px solid #FFFFFF;
+	}
+}
+
+/* icone étoile */
+.etoile {
+	position: absolute;
+	float: left;
+	margin: 10px 20px 10px 10px;
+}
+
+.etoile:nth-of-type(2) {
+	margin-top: 50px;
+}
+
+/* Map */
+.localisation {
+	margin-bottom: 40px;
+}
+
+.map {
+	display: block;
+	width: 100%;
+}
+
+.map iframe {
+	border: 1px solid #573B50 !important;
+}
+
+.coord {
+	h3 {
+		font-size: 20px !important;
+		margin: 0 !important;
+	}
+	p {
+		font-size: 15px;
+		margin: 5px 0px 20px 0px;
+	}
+}
+
+.reseaux img {
+	margin-right: 30px;
+}
+
+/* footer */
+footer {
+	background-color: #FFFFFF;
+	font-size: 15px;
+	padding: 20px;
+}
+
+/* Formulaire Login */
+#loginForm {
+	width: 50%;
+	background-color: rgba(87, 59, 80, 0.5);
+	margin: auto;
+	padding: 20px;
+	border-radius: 3%;
+	box-shadow: -6px 6px 6px rgba(87, 59, 80, 0.4);
+}
+
+.col-form-label {
+	color: #FFFFFF;
+}
+
+.center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+input.btn.submit {
+	background-color: #573B50;
+	color: #FFFFFF !important;
+	border: solid 1px #573b50;
+	margin-top: 10px;
+	&:hover {
+		color: #573B50 !important;
+		background-color: #F3EEE9;
+		border: 1px solid #573B50;
+	}
+}
+
+.form-group{
+	margin-bottom: 20px; 
+}
+
+/* Tableau de la liste des produits  */
+.right {
+	text-align: right !important;
+}
+
+.table, th, td {
+	border: 1px solid #573B50 !important;
+}
+
+/* formulaire update et insert produit, insert Post */
+#updateProduct, #insertProduct, #insertPost, #updatePost {
+	background-color: rgba(87, 59, 80, 0.5);
+	margin: auto;
+	font-weight: bold;
+	border:1px solid #F3EEE9;
+	padding: 20px;
+}
+
+.container-fluid {
+	display: flex;
+}
+
+/* Liste des produits et des posts*/
+a.btn.btn-product,  a.btn.btn-post{
+	background-color: #573B50;
+	color: #FFFFFF !important;
+	margin-bottom: 10px;
+	&:hover {
+		color: #573B50 !important;
+		background-color: #F3EEE9;
+		border: 1px solid #573B50;
+		font-weight: bolder;
+	}
+}
+
+.btn-product-right {
+	float: right;
+}
+
+.page-link {
+	color: #573B50 !important;
+}
+
+.active>.page-link {
+	background-color: #573B50 !important;
+	color: #FFFFFF !important;
+}
+/* Page admin */
+.gestion {
+	width: 50%;
+	margin: auto;
+}
+
+.pastille {
+	list-style-image: url("../img/icons/grape.png");
+}
+
+/* Page contact */
+.contact {
+	margin-bottom: 40px;
+}
+
+.conseil {
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	width: 60%;
+}
+
+#contactForm {
+	width: 50%;
+	background-color: #FFFFFF;
+	margin: auto;
+	padding: 20px;
+	border-radius: 3%;
+	box-shadow: -6px 6px 6px rgba(87, 59, 80, 0.4);
+	input, textarea {
+		color: #FFFFFF;
+		background-color: rgba(87, 59, 80, 0.4);
+	}
+}
+
+/* Page produit unique */
+.fiche {
+	display: flex;
+}
+
+.desc-prod {
+	margin-bottom: 20px;
+}
+
+/* Page produits groupés par famille */
+.card {
+	margin: 5px;
+	border: 1px solid #573B50 !important;
+}
+
+.card-title {
+	padding: 20px;
+	background-color: rgba(87, 59, 80, 0.4) !important;
+	height: 100px;
+}
+
+.card-body {
+	height: 200px;
+	overflow: hidden;
+  	white-space: wrap;
+	text-overflow: ellipsis !important;
+}
+
+/* page Régions */
+.card-regions {
+	margin-top: 20px !important;
+}
+
+
+/* Page qui sommes-nous ? */
+.bloc-center {
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+	.btn-product-right {
+		float: none;
+	}
+	.carousel-text {
+		top: 0;
+		right: 0;
+		float: none;
+		width: 100%;
+	}
+	.carousel-img img{
+		width: 100%;
+	}
+}
