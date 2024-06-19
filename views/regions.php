@@ -42,7 +42,7 @@ require('../class/ProductManager.php');
 				<?php if(($region['region_name'] != 'Non définie') & ($region['region_name'] != 'Armagnac') & ($region['region_name'] != 'Bouchons') & ($region['region_name'] != 'Calvados') & ($region['region_name'] != 'Cognac') & ($region['region_name'] != 'Cornichons') & ($region['region_name'] != 'Crèmes') & ($region['region_name'] != 'Eaux de Vie') & ($region['region_name'] != 'France') & ($region['region_name'] != 'Gins') & ($region['region_name'] != 'Liqueurs') & ($region['region_name'] != 'Portos') & ($region['region_name'] != 'Rhums') & ($region['region_name'] != 'Tartinables') & ($region['region_name'] != 'Téquilas') & ($region['region_name'] != 'Verrerie') & ($region['region_name'] != 'Vinaigres')): ?>
 				<div class="col-sm-2 card-regions">
 					<div class="card" style="width: 10rem;">
-						<img src="/bourvence/img/regions/<?= $region['region_name'] ?>" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
+						<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
 			  			<h5 class="card-title center"><strong><?= $region['region_name']  ?></strong></h5>
 			  			<div class="card-footer">
 			  				<a href="products.php?region_id=<?= $region['region_id']?>" class="btn btn-product">En savoir plus</a>

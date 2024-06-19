@@ -66,11 +66,15 @@ require('../process/process_cookie.php');
 					<li><a href="https://fr.freepik.com/icone/facebook_174848#fromView=family&page=1&position=15&uuid=faa17053-25d5-4c6d-a96c-1218342ec4f4"><img src="../img/icons/facebook.png" alt="icone facebook">Icône facebook de Freepik</a></li>
 					<li><a href="https://fr.freepik.com/icone/instagram_174855#fromView=family&page=1&position=0&uuid=faa17053-25d5-4c6d-a96c-1218342ec4f4"><img src="../img/icons/instagram.png" alt="icone instagram">Icône instagram de Freepik</a></li>
 					<li><a href="https://www.flaticon.com/free-icons/grape" title="grape icons"><img src="../img/icons/grape.png">Grape icons created by Good Ware - Flaticon</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-afrique">Carte Afrique Vecteurs par Vecteezy</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-europe">Carte Europe Vecteurs par Vecteezy</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/fronti%C3%A8re">Frontière Vecteurs par Vecteezy</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-australie"><img src="/bourvence/img/regions/australie.png">Carte Australie Vecteurs par Vecteezy</a></li>
+					<li><a href="https://www.club-des-voyages.com/liban/situation.html">Carte du liban par club des voyages</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/graphique">Graphique Vecteurs par Vecteezy</a></li>
 				</ul>
 			</div>
 		</div>
-
-
 
 		<div id="logo" class="center">
 			<a href="../index.php"><img class="logo" src="../img/logo_bourvence.png" alt="logo Cave Bourvence" height="130" width="280"></a>
