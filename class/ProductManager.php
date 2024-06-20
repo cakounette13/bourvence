@@ -323,6 +323,17 @@ class ProductManager {
 		return $result;
 	}
 
+	// Sélectionner toutes les régions de France
+	public function getRegionFrance() {
+		$sql = "SELECT * FROM products P INNER JOIN regions R ON (P.region_id = R.region_id) WHERE region_name IN ('Beaujolais', 'Bordelais', 'Bourgogne', 'Champagne', 'France', 'Languedoc', 'Loire', 'Provence', 'Rhône', 'Roussillon', 'Sud-Ouest') GROUP BY R.region_id";
+		$stmt = $this->_db->prepare($sql);
+		$stmt->execute();
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$result[] = $row;
+		}
+		return $result;
+	}
+
 	// Sélectionner tous les produits d'une région
 	public function getProductRegion($region_id) {
 		$sql = "SELECT * FROM products WHERE region_id = :region_id";
@@ -347,8 +358,14 @@ class ProductManager {
 		return $result;
 	}
 
-	// Sélection des vins étrangerd
-	/*public function getStrangerProduct($region_id) {
-		$sql ="SELECT *"
-	}*/
+	// Sélection des regions des vins étrangers
+	public function getRegionStranger() {
+		$sql = "SELECT * FROM products P INNER JOIN regions R ON (P.region_id = R.region_id) WHERE region_name IN ('Afrique du Sud', 'Allemagne', 'Argentine', 'Australie', 'Chili', 'Espagne', 'Etats-Unis', 'Hongrie', 'Italie', 'Liban', 'Maroc', 'Nouvelle Zélande', 'Portugal') GROUP BY R.region_id";
+		$stmt = $this->_db->prepare($sql);
+		$stmt->execute();
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$result[] = $row;
+		}
+		return $result;
+	}
 }

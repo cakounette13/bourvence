@@ -33,8 +33,8 @@ $colors = $products->getColorFamily();
 							}
 						} ?>
 						
-						<a class="dropdown-item" id="" href="/bourvence/views/products.php?region_id=0">Vins Etrangers</a>
-						<a class="dropdown-item" id="" href="/bourvence/views/regions">Par Région</a>
+						<a class="dropdown-item" id="" href="/bourvence/views/strangers.php">Vins Etrangers</a>
+						<a class="dropdown-item" id="" href="/bourvence/views/regions.php">Par Région</a>
 						<a class="dropdown-item" id="" href="#">Par Domaine</a>
 					</div>
 					

@@ -33,11 +33,11 @@ require('../class/ProductManager.php');
 <main>
 	<?php
 	$product = new ProductManager($db);
-	$regionsFrance = $product->getRegionFrance();
+	$regionsStranger = $product->getRegionStranger();
 	?>
 	<div class="container">
 		<div class="row">
-			<?php foreach($regionsFrance as $region): ?>
+			<?php foreach($regionsStranger as $region): ?>
 				<div class="col-sm-2 card-regions">
 					<div class="card" style="width: 10rem;">
 						<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
