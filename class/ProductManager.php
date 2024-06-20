@@ -368,4 +368,6 @@ class ProductManager {
 		}
 		return $result;
 	}
+
+	// Sélectionner 
 }

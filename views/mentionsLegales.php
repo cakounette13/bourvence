@@ -80,4 +80,7 @@ require('../process/process_cookie.php');
 			<a href="../index.php"><img class="logo" src="../img/logo_bourvence.png" alt="logo Cave Bourvence" height="130" width="280"></a>
 		</div>
 	</main>
+
+	<?php include('footer.php') ?>
 </body>
+</html>

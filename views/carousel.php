@@ -3,9 +3,8 @@ require('class/PostManager.php');
 
 $post = new PostManager($db);
 $posts = $post->getPost();
-
 ?>
-
+// Carousel se trouvant sous la barre de navigation
 <header id="container-fluid">
 	<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 		<div class="carousel-inner">
@@ -23,7 +22,7 @@ $posts = $post->getPost();
 				<?php endif ?>
 			<?php endforeach ?>		
 		</div>
-		 <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
