@@ -313,7 +313,7 @@ class ProductManager {
 
 	// Sélectionner tous les produits d'une famille
 	public function getProductFamily($family_id) {
-		$sql = "SELECT * FROM products WHERE family_id = :family_id";
+		$sql = "SELECT *, F.family_name FROM products P INNER JOIN families F ON (P.family_id = F.family_id) WHERE P.family_id = :family_id";
 		$stmt = $this->_db->prepare($sql);
 		$stmt->bindparam(':family_id', $family_id);
 		$stmt->execute();
@@ -336,7 +336,7 @@ class ProductManager {
 
 	// Sélection de tous les produits d'une région
 	public function getProductRegion($region_id) {
-		$sql = "SELECT * FROM products WHERE region_id = :region_id";
+		$sql = "SELECT *, region_name FROM products P INNER JOIN regions R ON (P.region_id = R.region_id) WHERE P.region_id = :region_id";
 		$stmt = $this->_db->prepare($sql);
 		$stmt->bindparam(':region_id', $region_id);
 		$stmt->execute();
@@ -348,7 +348,7 @@ class ProductManager {
 
 	// Sélection de tous les produits d'une couleur
 	public function getProductColor($color_id) {
-		$sql = "SELECT * FROM products WHERE color_id = :color_id";
+		$sql = "SELECT *, color_name FROM products P INNER JOIN colors C ON (P.color_id = C.color_id) WHERE P.color_id = :color_id";
 		$stmt = $this->_db->prepare($sql);
 		$stmt->bindparam(':color_id', $color_id);
 		$stmt->execute();
@@ -371,10 +371,12 @@ class ProductManager {
 
 	// Sélection des domaines à présenter en page d'accueil
 	public function getDomaine($frs_id="") {
+		// Sélection de plusieurs domaines choisis
 		if(empty($frs_id)) {
 			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Grands vins du vieux monde')";
 			$stmt = $this->_db->prepare($sql);
 		} else {
+			// Slection d'un seul domaine
 			$sql = "SELECT * FROM fournisseurs WHERE frs_id = :frs_id";
 			$stmt = $this->_db->prepare($sql);
 			$stmt->bindparam(':frs_id', $frs_id);
@@ -386,10 +388,18 @@ class ProductManager {
 		return $result;
 	}
 
-	// Sélection de tous les domaines que l'on veut présenter
+	
 	public function getAllDomaines($frs_id="") {
-		$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection')";
-		$stmt = $this->_db->prepare($sql);
+		// Sélection de tous les domaines que l'on veut présenter
+		if(empty($frs_id)) {
+			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection')";
+			$stmt = $this->_db->prepare($sql);
+		} else {
+			// Sélection de tous les produits d'un seul domaine
+			$sql = "SELECT * FROM fournisseurs F INNER JOIN products P ON (F.frs_id = P.frs_id) WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection') AND P.frs_id= :frs_id";
+			$stmt = $this->_db->prepare($sql);
+			$stmt->bindparam(':frs_id', $frs_id);
+		}
 		$stmt->execute();
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$result[] = $row;

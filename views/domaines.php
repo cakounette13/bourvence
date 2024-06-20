@@ -36,6 +36,7 @@ require('../class/ProductManager.php');
 				$domaines = $product->getAllDomaines();
 			?>
 			<div class="container">
+				<h1 class="center">Tous nos domaines</h1>
 				<div class="row">
 					<?php foreach($domaines as $domaine): ?>
 						<div class="col-sm-4">

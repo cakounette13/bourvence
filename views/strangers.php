@@ -37,6 +37,7 @@ require('../class/ProductManager.php');
 			?>
 			<div class="container">
 				<div class="row">
+					<h1 class="center">Vins étrangers</h1>
 					<?php foreach($regionsStranger as $region): ?>
 						<div class="col-sm-2 card-regions">
 							<div class="card" style="width: 10rem;">

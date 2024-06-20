@@ -50,6 +50,7 @@ require('../class/ProductManager.php');
 			<div class="container">
 				<div class="row">
 					<?php if(isset($prodByColor)): ?>
+						<h1 class="center"><?= $prodByColor[0]['color_name'] ?></h1>
 						<?php foreach($prodByColor as $prodCol): ?>
 						<div class="col-sm-4">
 							<div class="card card-products" style="width: 18rem;">
@@ -65,6 +66,14 @@ require('../class/ProductManager.php');
 						</div>
 						<?php endforeach ?>
 					<?php elseif(isset($prodByRegion)): ?>
+						<h1 class="center">
+							<?php if($prodByRegion[0]['region_name'] == "Non définie") {
+									echo "Accessoires Divers";
+								} else {
+									echo $prodByRegion[0]['region_name'];
+								} 
+							?>
+						</h1>
 						<?php foreach($prodByRegion as $prod): ?>
 						<div class="col-sm-4">
 							<div class="card card-products" style="width: 18rem;">
@@ -80,6 +89,7 @@ require('../class/ProductManager.php');
 						</div>
 						<?php endforeach ?>
 					<?php else: ?>
+						<h1 class="center"><?= $products[0]['family_name'] ?></h1>
 						<?php foreach($products as $product): ?>
 						<div class="col-sm-4">
 							<div class="card card-products" style="width: 18rem;">

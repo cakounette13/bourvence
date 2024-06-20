@@ -5,7 +5,7 @@ require('../class/ProductManager.php');
 $frs_id = (int) htmlspecialchars($_GET['frs_id']);
 
 $products = new ProductManager($db);
-
+$domaines = $products->getAllDomaines($frs_id);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,6 +36,18 @@ $products = new ProductManager($db);
 		<?php include('nav.php') ?>
 
 		<main>
+			<div class="container">
+				<h1 class="center"><?= $domaines[0]['frs_name'] ?></h1>
+				<div class="row">
+					<div class="col-6">
+						<img src="/bourvence/img/domaines/<?= $domaines[0]['frs_img'] ?>" >
+					</div>
+									
+					<div class="col-6">
+						<p><?= $domaines[0]['frs_desc'] ?></p>
+					</div>
+				</div>			
+			</div>
 			<div>
 				<h3 class="center">Une question ?</h3>
 				<?php include('contactForm.php') ?>
