@@ -4,7 +4,7 @@ $families = $products->getFamily();
 $regions = $products->getRegion();
 $colors = $products->getColorFamily();
 ?>
-// Menu de navigation
+<!-- Menu de navigation -->
 <header id="container-fluid">
 	<nav class="navbar navbar-expand-lg">
 		<div id="logo">
@@ -32,9 +32,9 @@ $colors = $products->getColorFamily();
 							}
 						} ?>
 						
-						<a class="dropdown-item" id="" href="/bourvence/views/strangers.php">Vins Etrangers</a>
-						<a class="dropdown-item" id="" href="/bourvence/views/regions.php">Par Région</a>
-						<a class="dropdown-item" id="" href="#">Par Domaine</a>
+						<a class="dropdown-item" href="/bourvence/views/strangers.php">Vins Etrangers</a>
+						<a class="dropdown-item" href="/bourvence/views/regions.php">Par Région</a>
+						<a class="dropdown-item" href="/bourvence/views/domaines.php">Par Domaine</a>
 					</div>
 					
 				</li>

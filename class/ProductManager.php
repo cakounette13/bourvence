@@ -334,7 +334,7 @@ class ProductManager {
 		return $result;
 	}
 
-	// Sélectionner tous les produits d'une région
+	// Sélection de tous les produits d'une région
 	public function getProductRegion($region_id) {
 		$sql = "SELECT * FROM products WHERE region_id = :region_id";
 		$stmt = $this->_db->prepare($sql);
@@ -346,7 +346,7 @@ class ProductManager {
 		return $result;
 	}
 
-	// Sélectionner tous les produits d'une couleur
+	// Sélection de tous les produits d'une couleur
 	public function getProductColor($color_id) {
 		$sql = "SELECT * FROM products WHERE color_id = :color_id";
 		$stmt = $this->_db->prepare($sql);
@@ -369,5 +369,31 @@ class ProductManager {
 		return $result;
 	}
 
-	// Sélectionner 
+	// Sélection des domaines à présenter en page d'accueil
+	public function getDomaine($frs_id="") {
+		if(empty($frs_id)) {
+			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Grands vins du vieux monde')";
+			$stmt = $this->_db->prepare($sql);
+		} else {
+			$sql = "SELECT * FROM fournisseurs WHERE frs_id = :frs_id";
+			$stmt = $this->_db->prepare($sql);
+			$stmt->bindparam(':frs_id', $frs_id);
+		}
+		$stmt->execute();
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$result[] = $row;
+		}
+		return $result;
+	}
+
+	// Sélection de tous les domaines que l'on veut présenter
+	public function getAllDomaines($frs_id="") {
+		$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection')";
+		$stmt = $this->_db->prepare($sql);
+		$stmt->execute();
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$result[] = $row;
+		}
+		return $result;
+	}
 }

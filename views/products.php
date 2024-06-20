@@ -52,7 +52,7 @@ require('../class/ProductManager.php');
 					<?php if(isset($prodByColor)): ?>
 						<?php foreach($prodByColor as $prodCol): ?>
 						<div class="col-sm-4">
-							<div class="card" style="width: 18rem;">
+							<div class="card card-products" style="width: 18rem;">
 								<img src="/bourvence/img/products/vignettes/<?= $prodCol['prod_img'] ?>" class="card-img-top" alt="<?= $prodCol['prod_name'] ?>" height="300">
 					  			<h5 class="card-title center"><strong><?= $prodCol['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
@@ -67,7 +67,7 @@ require('../class/ProductManager.php');
 					<?php elseif(isset($prodByRegion)): ?>
 						<?php foreach($prodByRegion as $prod): ?>
 						<div class="col-sm-4">
-							<div class="card" style="width: 18rem;">
+							<div class="card card-products" style="width: 18rem;">
 								<img src="/bourvence/img/products/vignettes/<?= $prod['prod_img'] ?>" class="card-img-top" alt="<?= $prod['prod_name'] ?>" max-width="100%" height="auto">
 					  			<h5 class="card-title center"><strong><?= $prod['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
@@ -82,7 +82,7 @@ require('../class/ProductManager.php');
 					<?php else: ?>
 						<?php foreach($products as $product): ?>
 						<div class="col-sm-4">
-							<div class="card" style="width: 18rem;">
+							<div class="card card-products" style="width: 18rem;">
 								<img src="/bourvence/img/products/vignettes/<?= $product['prod_img'] ?>" class="card-img-top" alt="<?= $product['prod_name'] ?>" height="300">
 					  			<h5 class="card-title center"><strong><?= $product['prod_name'] ?></strong></h5>
 					  			<div class="card-body">

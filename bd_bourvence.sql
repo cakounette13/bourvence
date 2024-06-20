@@ -191,6 +191,8 @@ DROP TABLE IF EXISTS `db_bourvence`.`fournisseurs` ;
 CREATE TABLE IF NOT EXISTS `db_bourvence`.`fournisseurs` (
   `frs_id` INT(11) NOT NULL AUTO_INCREMENT,
   `frs_name` VARCHAR(45) NOT NULL,
+  `frs_img` VARCHAR(100) NULL,
+  `frs_desc` TEXT NULL,
   `frs_site_web` VARCHAR(45) NULL,
   PRIMARY KEY (`frs_id`))
 ENGINE = InnoDB

@@ -369,8 +369,8 @@ a.btn.btn-product,  a.btn.btn-post{
 	text-overflow: ellipsis !important;
 }
 
-/* page Régions */
-.card-regions {
+/* page Régions, Products, Domaines */
+.card-regions, .card-products, .card-domaines {
 	margin-top: 20px !important;
 }
 

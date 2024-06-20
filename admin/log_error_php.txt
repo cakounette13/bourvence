@@ -1,0 +1,183 @@
+[20-Jun-2024 11:01:40 UTC] PHP Warning:  require(../connect.php): Failed to open stream: No such file or directory in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:01:40 UTC] PHP Stack trace:
+[20-Jun-2024 11:01:40 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:01:40 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:01:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../connect.php' (include_path='.;C:\php\pear') in C:\wamp64\www\bourvence\views\main.php:2
+Stack trace:
+#0 C:\wamp64\www\bourvence\index.php(57): include()
+#1 {main}
+  thrown in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:01:57 UTC] PHP Warning:  require(../connect.php): Failed to open stream: No such file or directory in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:01:57 UTC] PHP Stack trace:
+[20-Jun-2024 11:01:57 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:01:57 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:01:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../connect.php' (include_path='.;C:\php\pear') in C:\wamp64\www\bourvence\views\main.php:2
+Stack trace:
+#0 C:\wamp64\www\bourvence\index.php(57): include()
+#1 {main}
+  thrown in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:01:59 UTC] PHP Warning:  require(../connect.php): Failed to open stream: No such file or directory in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:01:59 UTC] PHP Stack trace:
+[20-Jun-2024 11:01:59 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:01:59 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:01:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../connect.php' (include_path='.;C:\php\pear') in C:\wamp64\www\bourvence\views\main.php:2
+Stack trace:
+#0 C:\wamp64\www\bourvence\index.php(57): include()
+#1 {main}
+  thrown in C:\wamp64\www\bourvence\views\main.php on line 2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant DBHOST already defined in C:\wamp64\www\bourvence\config.php on line 9
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant DBUSER already defined in C:\wamp64\www\bourvence\config.php on line 10
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant DBPASS already defined in C:\wamp64\www\bourvence\config.php on line 11
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant DBNAME already defined in C:\wamp64\www\bourvence\config.php on line 12
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant WEB_DIR_NAME already defined in C:\wamp64\www\bourvence\config.php on line 15
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant WEB_DIR_PATH already defined in C:\wamp64\www\bourvence\config.php on line 16
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   5. define($constant_name = 'WEB_DIR_PATH', $value = 'C:/wamp64/www/bourvence') C:\wamp64\www\bourvence\config.php:16
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant IMAGE_DIR_NAME already defined in C:\wamp64\www\bourvence\config.php on line 17
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant IMAGE_DIR_PATH already defined in C:\wamp64\www\bourvence\config.php on line 18
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   5. define($constant_name = 'IMAGE_DIR_PATH', $value = 'C:/wamp64/www/bourvence/img') C:\wamp64\www\bourvence\config.php:18
+[20-Jun-2024 11:02:29 UTC] PHP Warning:  Constant WEB_DIR_MAIL already defined in C:\wamp64\www\bourvence\config.php on line 20
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:29 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:29 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:29 UTC] PHP Fatal error:  Cannot declare class ProductManager, because the name is already in use in C:\wamp64\www\bourvence\class\ProductManager.php on line 3
+[20-Jun-2024 11:02:29 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:29 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:29 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant DBHOST already defined in C:\wamp64\www\bourvence\config.php on line 9
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant DBUSER already defined in C:\wamp64\www\bourvence\config.php on line 10
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant DBPASS already defined in C:\wamp64\www\bourvence\config.php on line 11
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant DBNAME already defined in C:\wamp64\www\bourvence\config.php on line 12
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant WEB_DIR_NAME already defined in C:\wamp64\www\bourvence\config.php on line 15
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant WEB_DIR_PATH already defined in C:\wamp64\www\bourvence\config.php on line 16
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   5. define($constant_name = 'WEB_DIR_PATH', $value = 'C:/wamp64/www/bourvence') C:\wamp64\www\bourvence\config.php:16
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant IMAGE_DIR_NAME already defined in C:\wamp64\www\bourvence\config.php on line 17
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant IMAGE_DIR_PATH already defined in C:\wamp64\www\bourvence\config.php on line 18
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   5. define($constant_name = 'IMAGE_DIR_PATH', $value = 'C:/wamp64/www/bourvence/img') C:\wamp64\www\bourvence\config.php:18
+[20-Jun-2024 11:02:31 UTC] PHP Warning:  Constant WEB_DIR_MAIL already defined in C:\wamp64\www\bourvence\config.php on line 20
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:31 UTC] PHP   3. require() C:\wamp64\www\bourvence\views\main.php:2
+[20-Jun-2024 11:02:31 UTC] PHP   4. require() C:\wamp64\www\bourvence\connect.php:2
+[20-Jun-2024 11:02:31 UTC] PHP Fatal error:  Cannot declare class ProductManager, because the name is already in use in C:\wamp64\www\bourvence\class\ProductManager.php on line 3
+[20-Jun-2024 11:02:31 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:31 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:43 UTC] PHP Warning:  Undefined property: ProductManager::$getFrs in C:\wamp64\www\bourvence\views\main.php on line 10
+[20-Jun-2024 11:02:43 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:43 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:43 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:02:43 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\views\main.php on line 12
+[20-Jun-2024 11:02:43 UTC] PHP Stack trace:
+[20-Jun-2024 11:02:43 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:02:43 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:04:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ')' à la ligne 1 in C:\wamp64\www\bourvence\class\ProductManager.php:382
+Stack trace:
+#0 C:\wamp64\www\bourvence\class\ProductManager.php(382): PDOStatement->execute()
+#1 C:\wamp64\www\bourvence\views\main.php(3): ProductManager->getFrsDomaine()
+#2 C:\wamp64\www\bourvence\index.php(57): include('C:\\wamp64\\www\\b...')
+#3 {main}
+  thrown in C:\wamp64\www\bourvence\class\ProductManager.php on line 382
+[20-Jun-2024 11:05:07 UTC] PHP Warning:  Undefined variable $product in C:\wamp64\www\bourvence\views\main.php on line 12
+[20-Jun-2024 11:05:07 UTC] PHP Stack trace:
+[20-Jun-2024 11:05:07 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:05:07 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:05:07 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\views\main.php on line 12
+[20-Jun-2024 11:05:07 UTC] PHP Stack trace:
+[20-Jun-2024 11:05:07 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:05:07 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:08:06 UTC] PHP Warning:  Undefined array key "frs_id" in C:\wamp64\www\bourvence\views\main.php on line 10
+[20-Jun-2024 11:08:06 UTC] PHP Stack trace:
+[20-Jun-2024 11:08:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:08:06 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:08:32 UTC] PHP Warning:  Undefined array key "frs_id" in C:\wamp64\www\bourvence\views\main.php on line 11
+[20-Jun-2024 11:08:32 UTC] PHP Stack trace:
+[20-Jun-2024 11:08:32 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\index.php:0
+[20-Jun-2024 11:08:32 UTC] PHP   2. include() C:\wamp64\www\bourvence\index.php:57
+[20-Jun-2024 11:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ProductManager::getDomaine() in C:\wamp64\www\bourvence\views\main.php:3
+Stack trace:
+#0 C:\wamp64\www\bourvence\index.php(57): include()
+#1 {main}
+  thrown in C:\wamp64\www\bourvence\views\main.php on line 3

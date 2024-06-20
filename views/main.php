@@ -1,14 +1,17 @@
+<?php
+$products = new ProductManager($db);
+$domaines = $products->getDomaine();
+?>
 <main>
 	<img class="etoile" src="img/icons/etoile.png"><h2>Nos domaines à l'affiche</h2>
 	
 	<div class="d-grid text-center gap-2 d-md-block">
-		<a role="button" class="btn btn-bloc g-col-md-6" href="#">Domaine de la goujonne</a>
-		<a role="button" class="btn btn-bloc g-col-md-6" href="#">Domaine Maldant Pauvelot</a>
-		<a role="button" class="btn btn-bloc g-col-md-6" href="#">Domaine Clavel</a>
-		<a role="button" class="btn btn-bloc g-col-md-6" href="#">Domaine de la Chrétienne</a>
+		<?php foreach ($domaines as $domaine): ?>
+			<a role="button" class="btn btn-bloc g-col-md-6" href="/bourvence/views/domaine.php?frs_id=<?= $domaine['frs_id'] ?>"><?= $domaine['frs_name'] ?></a>
+		<?php endforeach ?>
 	</div>
 	<div class="d-grid text-center gap-2 d-md-block">
-		<a role="button" class="btn btn-bloc g-col-md-6" href="#">Tous les domaines</a>
+		<a role="button" class="btn btn-bloc g-col-md-6" href="/bourvence/views/domaines.php">Tous les domaines</a>
 	</div>
 
 	<img class="etoile" src="img/icons/etoile.png"><h2>Notre Magasin</h2>

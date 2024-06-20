@@ -4,7 +4,7 @@ require('class/PostManager.php');
 $post = new PostManager($db);
 $posts = $post->getPost();
 ?>
-// Carousel se trouvant sous la barre de navigation
+<!-- Carousel se trouvant sous la barre de navigation -->
 <header id="container-fluid">
 	<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 		<div class="carousel-inner">
