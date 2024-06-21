@@ -375,6 +375,10 @@ a.btn.btn-product,  a.btn.btn-post{
 	margin-top: 20px !important;
 }
 
+.ancre {
+	margin-right: 20px;
+	float: right;
+}
 
 /* Page qui sommes-nous ? */
 .bloc-center {
@@ -383,6 +387,11 @@ a.btn.btn-product,  a.btn.btn-post{
 	text-align: center;
 }
 
+/* Page modal accueil */
+.modal {
+	display: block;
+	position: relative;
+}
 
 /* responsive */
 @media (max-width: 768px) {

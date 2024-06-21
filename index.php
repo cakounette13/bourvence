@@ -14,7 +14,6 @@ $products = new ProductManager($db);
 $families = $products->getFamily();
 $regions = $products->getRegion();
 $colors = $products->getColorFamily();
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,7 +28,8 @@ $colors = $products->getColorFamily();
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 		<script src="tarteaucitron/tarteaucitron.js"></script>
 		<script type="text/javascript" src="js/cookies.js"></script>
-
+		<script type="text/javascript" src="js/modal.js"></script>
+		
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z36N7G2D2K"></script>
 		<script>
@@ -42,7 +42,6 @@ $colors = $products->getColorFamily();
 	</head>
 
 	<body>
-
 		<?php if(!empty($_SESSION['error'])): ?>
 			<div class="alert alert-danger" role="alert">
 				<?= $_SESSION['error'] ?>

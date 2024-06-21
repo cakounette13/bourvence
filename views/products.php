@@ -27,7 +27,7 @@ require('../class/ProductManager.php');
 		</script>
 	</head>
 
-	<body>
+	<body  id="debut">
 		<?php include('nav.php'); ?>
 
 		<main>
@@ -108,6 +108,7 @@ require('../class/ProductManager.php');
 				</div>
 			</div>
 			
+			<a class="ancre" href="#debut"><i class="bi bi-arrow-up-circle-fill" style="font-size: 5rem; color: #573b50;"></i></a>
 
 			<div>
 				<p class="conseil">
