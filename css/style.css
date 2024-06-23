@@ -389,8 +389,22 @@ a.btn.btn-product,  a.btn.btn-post{
 
 /* Page modal accueil */
 .modal {
-	display: block;
+	display: none;
 	position: relative;
+}
+
+.modal-header {
+	img {
+		max-width: 50% !important;
+		margin: auto;
+	}
+}
+
+.modal-footer {
+	margin: auto;
+	p {
+		font-size: 8px;
+	}
 }
 
 /* responsive */

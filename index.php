@@ -55,6 +55,8 @@ $colors = $products->getColorFamily();
 
 		<?php include('views/main.php') ?>
 
-		<?php include('views/footer.php'); ?>
+		<?php include('views/footer.php') ?>
+		
+		<?php include('views/modal.php') ?>
 	</body>
 </html>
