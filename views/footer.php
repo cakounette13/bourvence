@@ -5,8 +5,8 @@
 				<h4>A propos de nous</h4>
 				<ul>
 					<a href="/bourvence/views/nous.php"><li class="pastille">Qui sommes-nous ?</li></a>
-					<li class="pastille">Les CGV et CGU</li>
-					<li class="pastille">Politique de confidentialité et Cookies</li>
+					<a href="/bourvence/views/cgu.php"><li class="pastille">Les CGU</li></a>
+					<a href="/bourvence/views/privacy_policy.php"><li class="pastille">Politique de confidentialité et Cookies</li></a>
 					<a href="/bourvence/views/Mentionslegales.php"><li class="pastille">Mentions légales</li></a>
 					<li class="pastille">Politique d'accéssibilité</li>
 				</ul>

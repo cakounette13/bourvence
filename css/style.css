@@ -84,7 +84,7 @@ li {
 .nav-link {
 	font-weight: bold;
 	&:hover {
-		background-color: rgba(87, 59, 80, 0.5);
+		background-color: rgba(87, 59, 80, 1);
 		color: #F3EEE9 !important;
 	}
 }
@@ -429,6 +429,15 @@ a.btn.btn-product,  a.btn.btn-post{
 	p {
 		font-size: 8px;
 	}
+}
+
+/* Page CGU */
+.politique {
+	padding: 20px;
+}
+
+#tarteaucitronManager {
+	background-color: black !important;
 }
 
 /* responsive */

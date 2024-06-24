@@ -19,6 +19,7 @@ $colors = $products->getColorFamily();
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="description" content="Page d'accueil du site de la Cave Bourvence">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Cave Bourvence, Votre cave à vin</title>
 
