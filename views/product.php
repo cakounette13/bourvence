@@ -1,6 +1,9 @@
 <?php
 require('../connect.php');
 require('../class/ProductManager.php');
+require('../class/Stat.php');
+require('../class/StatManager.php');
+require('../process/process_cookie.php');
 
 $prod_id = (int) htmlspecialchars($_GET['prod_id']);
 
@@ -39,53 +42,52 @@ $colorProd = $products->getColor($prod_id);
 		<?php include('nav.php') ?>
 
 		<main>
-			<h2 class="center"><?= $product[0]['prod_name'] ?></h2>
+			<h1 class="center"><?= $product[0]['prod_name'] ?></h1>
 
-			<div class="container-fluid fiche">
-				<div class="col-2">
-
-				</div>
-				<div class="col-2">
-					<img src="/bourvence/img/products/<?= $product[0]['prod_img'] ?>" alt="<?= $product[0]['prod_name'] ?>" height="500" >
-				</div>
-				<div class="col-7">
-					<div class="container-fluid desc-prod">
-						<div class="col-4"><strong>Appellation :</strong></div>
-						<?php if($appell[0]['appell_name'] == 'Non définie'): ?>
-							<div class="col-8">-</div>
-						<?php else: ?>
-							<div class="col-8"><?= $appell[0]['appell_name'] ?></div>
-						<?php endif ?>
+			<div class="container fiche">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3">
+						<img src="/bourvence/img/products/<?= $product[0]['prod_img'] ?>" alt="<?= $product[0]['prod_name'] ?>" height="500" >
 					</div>
-					
-					<div class="container-fluid desc-prod">
-						<div class="col-4"><strong>Description :</strong></div>
-						<div class="col-8"><?= $product[0]['prod_desc'] ?></div>
+					<div class="row col-xs-12 col-sm-9">
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Appellation : </strong></div>
+							<?php if($appell[0]['appell_name'] == 'Non définie'): ?>
+							<div class="col-xs-12 col-md-8">-</div>
+							<?php else: ?>
+							<div class="col-xs-12 col-md-8"><?= $appell[0]['appell_name'] ?></div>
+							<?php endif ?>
+						</div>
+												
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Description : </strong></div>
+							<div class="col-xs-12 col-md-8"><?= $product[0]['prod_desc'] ?></div>
+						</div>
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Prix : </strong></div>
+							<div class="col-xs-12 col-md-8"><?= number_format($product[0]['prod_prix_ttc'], 2) ?> €</div>
+						</div>
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Contenant : </strong></div>
+							<?php if($cont[0]['cont_name'] == 'Non définie'): ?>
+								<div class="col-xs-12 col-md-8">-</div>
+							<?php else: ?>
+								<div class="col-xs-12 col-md-8"><?= $cont[0]['cont_name'] ?></div>
+							<?php endif ?>
+						</div>
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Couleur : </strong></div>
+							<?php if($colorProd[0]['color_name'] == 'Non définie'): ?>
+								<div class="col-xs-12 col-md-8">-</div>
+							<?php else: ?>
+							<div class="col-xs-12 col-md-8"><?= $colorProd[0]['color_name'] ?></div>
+							<?php endif ?>
+						</div>
+						<p class="conseil">
+							N’hésitez pas à venir à la Cave Bourvence à Plan-de-Cuques, à côté de Marseille et d’Allauch, pour découvrir notre large choix de vins, de champagnes, de bières, de jus de fruits et de spiritueux, accompagné de nos conseils.<br/><br/>
+							Pour vos idées cadeaux, vous y trouverez également des accessoires, de la verrerie ainsi que quelques articles d’épicerie fine, à votre disposition.
+						</p>
 					</div>
-					<div class="container-fluid desc-prod">
-						<div class="col-4"><strong>Prix :</strong></div>
-						<div class="col-8"><?= number_format($product[0]['prod_prix_ttc'], 2) ?> €</div>
-					</div>
-					<div class="container-fluid desc-prod">
-						<div class="col-4"><strong>Contenant :</strong></div>
-						<?php if($cont[0]['cont_name'] == 'Non définie'): ?>
-							<div class="col-8">-</div>
-						<?php else: ?>
-							<div class="col-8"><?= $cont[0]['cont_name'] ?></div>
-						<?php endif ?>
-					</div>
-					<div class="container-fluid desc-prod">
-						<div class="col-4"><strong>Couleur :</strong></div>
-						<?php if($colorProd[0]['color_name'] == 'Non définie'): ?>
-							<div class="col-8">-</div>
-						<?php else: ?>
-						<div class="col-8"><?= $colorProd[0]['color_name'] ?></div>
-						<?php endif ?>
-					</div>
-					<p class="conseil">
-						N’hésitez pas à venir à la Cave Bourvence à Plan-de-Cuques, à côté de Marseille et d’Allauch, pour découvrir notre large choix de vins, de champagnes, de bières, de jus de fruits et de spiritueux, accompagné de nos conseils.<br/><br/>
-						Pour vos idées cadeaux, vous y trouverez également des accessoires, de la verrerie ainsi que quelques articles d’épicerie fine, à votre disposition.
-					</p>
 				</div>
 			</div>
 

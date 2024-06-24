@@ -1,6 +1,9 @@
 <?php
 require('../connect.php');
 require('../class/ProductManager.php');
+require('../class/Stat.php');
+require('../class/StatManager.php');
+require('../process/process_cookie.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,32 +35,38 @@ require('../class/ProductManager.php');
 
 		<main>
 			<?php
-			$product = new ProductManager($db);
-			$regionsStranger = $product->getRegionStranger();
+				$product = new ProductManager($db);
+				$regionsStranger = $product->getRegionStranger();
 			?>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<h1 class="center">Vins étrangers</h1>
-					<?php foreach($regionsStranger as $region): ?>
-						<div class="col-sm-2 card-regions">
-							<div class="card" style="width: 10rem;">
-								<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
-					  			<h5 class="card-title center"><strong><?= $region['region_name']  ?></strong></h5>
-					  			<div class="card-footer">
-					  				<a href="products.php?region_id=<?= $region['region_id']?>" class="btn btn-product">En savoir plus</a>
-					  			</div>
+					<div class="col-xs-12 col-sm-3 col-lg-2 filter">
+						<?php include('filter.php') ?>
+					</div>
+					<div class="row col-xs-12 col-sm-8 col-lg-9">
+						<h1 class="center">Vins étrangers</h1>
+						<?php foreach($regionsStranger as $region): ?>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card card-regions" style="width: 10rem;">
+									<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
+						  			<h5 class="card-title center"><strong><?= $region['region_name']  ?></strong></h5>
+						  			<div class="card-footer">
+						  				<a href="products.php?region_id=<?= $region['region_id']?>" class="btn btn-product">En savoir plus</a>
+						  			</div>
+								</div>
 							</div>
-						</div>
-					<?php endforeach ?>
+						<?php endforeach ?>
+					</div>
 				</div>
 			</div>
-			
+
 			<div>
 				<p class="conseil">
 					N’hésitez pas à venir à la Cave Bourvence à Plan-de-Cuques, à côté de Marseille et d’Allauch, pour découvrir notre large choix de vins, de champagnes, de bières, de jus de fruits et de spiritueux, accompagné de nos conseils.<br/><br/>
 					Pour vos idées cadeaux, vous y trouverez également des accessoires, de la verrerie ainsi que quelques articles d’épicerie fine, à votre disposition.
 				</p>
 			</div>
+
 			<div>
 				<h3 class="center">Une question ?</h3>
 				<?php include('contactForm.php') ?>

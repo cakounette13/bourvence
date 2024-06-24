@@ -1,6 +1,9 @@
 <?php
 require('../connect.php');
 require('../class/ProductManager.php');
+require('../class/Stat.php');
+require('../class/StatManager.php');
+require('../process/process_cookie.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,23 +38,27 @@ require('../class/ProductManager.php');
 				$product = new ProductManager($db);
 				$domaines = $product->getAllDomaines();
 			?>
-			<div class="container">
-				<h1 class="center">Tous nos domaines</h1>
+			<div class="container-fluid">
 				<div class="row">
-					<?php foreach($domaines as $domaine): ?>
-						<div class="col-sm-4">
-							<div class="card card-domaines" style="width: 18rem;">
-								<img src="/bourvence/img/domaines/vignettes/<?= $domaine['frs_img'] ?>" class="card-img-top" alt="<?= $domaine['frs_name'] ?>" height="100">
-					  			<h5 class="card-title center"><strong><?= $domaine['frs_name'] ?></strong></h5>
-					  			<div class="card-footer">
-					  				<a href="domaine.php?frs_id=<?=$domaine['frs_id']?>" class="btn btn-product">Voir le domaine</a>
-					  			</div>
+					<div class="col-xs-12 col-sm-3 col-lg-2 filter">
+						<?php include('filter.php') ?>
+					</div>
+					<div class="row col-xs-12 col-sm-8 col-lg-9">
+						<h1 class="center">Tous nos domaines</h1>
+						<?php foreach($domaines as $domaine): ?>
+							<div class="col-md-6 col-lg-4">
+								<div class="card card-domaines">
+									<img src="/bourvence/img/domaines/vignettes/<?= $domaine['frs_img'] ?>" class="card-img-top" alt="<?= $domaine['frs_name'] ?>" height="100">
+						  			<h5 class="card-title center"><strong><?= $domaine['frs_name'] ?></strong></h5>
+						  			<div class="card-footer">
+						  				<a href="domaine.php?frs_id=<?=$domaine['frs_id']?>" class="btn btn-product">Voir le domaine</a>
+						  			</div>
+								</div>
 							</div>
-						</div>
-					<?php endforeach ?>
+						<?php endforeach ?>
+					</div>
 				</div>
-			</div>
-			
+			</div>			
 
 			<div>
 				<p class="conseil">

@@ -69,7 +69,7 @@ require('../process/process_cookie.php');
 					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-afrique">Carte Afrique Vecteurs par Vecteezy</a></li>
 					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-europe">Carte Europe Vecteurs par Vecteezy</a></li>
 					<li><a href="https://fr.vecteezy.com/vecteur-libre/fronti%C3%A8re">Frontière Vecteurs par Vecteezy</a></li>
-					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-australie"><img src="/bourvence/img/regions/australie.png">Carte Australie Vecteurs par Vecteezy</a></li>
+					<li><a href="https://fr.vecteezy.com/vecteur-libre/carte-australie">Carte Australie Vecteurs par Vecteezy</a></li>
 					<li><a href="https://www.club-des-voyages.com/liban/situation.html">Carte du liban par club des voyages</a></li>
 					<li><a href="https://fr.vecteezy.com/vecteur-libre/graphique">Graphique Vecteurs par Vecteezy</a></li>
 				</ul>

@@ -1,14 +1,12 @@
 <?php
+session_start();
 require('../connect.php');
 require('../class/ProductManager.php');
 require('../class/Stat.php');
 require('../class/StatManager.php');
 require('../process/process_cookie.php');
 
-$frs_id = (int) htmlspecialchars($_GET['frs_id']);
-
-$products = new ProductManager($db);
-$domaines = $products->getAllDomaines($frs_id);
+$productsFilter = $_SESSION['filter'];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,8 +33,8 @@ $domaines = $products->getAllDomaines($frs_id);
 		</script>
 	</head>
 
-	<body>
-		<?php include('nav.php') ?>
+	<body  id="debut">
+		<?php include('nav.php'); ?>
 
 		<main>
 			<?php if(!empty($_SESSION['error'])): ?>
@@ -46,53 +44,46 @@ $domaines = $products->getAllDomaines($frs_id);
 				</div>
 			<?php endif ?>
 
-			<div class="container ficheDomaine">
-				<div class="row center">
-					<h1 class="col-12 center"><?= $domaines[0]['frs_name'] ?></h1>
-					<div class="col-6 img-domaine">
-						<img src="/bourvence/img/domaines/<?= $domaines[0]['frs_img'] ?>" alt="<?= $domaines[0]['frs_name'] ?>" height="500" >
-					</div>
-													
-					<div class="col-6">
-						<p><?= $domaines[0]['frs_desc'] ?></p>
-					</div>
-				</div>
-			</div>
-
 			<div class="container-fluid">
-				<div class="row col-xs-12">
+				<div class="row ">
 					<div class="col-xs-12 col-sm-3 col-lg-2 filter">
 						<?php include('filter.php') ?>
 					</div>
+					
 					<div class="row col-xs-12 col-sm-8 col-lg-9">
-						<?php foreach($domaines as $domaine): ?>
+						<h1 class="center">Produits trouvés correspondant aux filtres choisis</h1>
+						<?php foreach($productsFilter as $productFilter): ?>
 						<div class="col-md-6 col-lg-4">
-							<div class="card card-products">
-								<img src="/bourvence/img/products/vignettes/<?= $domaine['prod_img'] ?>" class="card-img-top" alt="<?= $domaine['prod_name'] ?>" height="300">
-					  			<h5 class="card-title center"><strong><?= $domaine['prod_name'] ?></strong></h5>
+							<div class="card card-products" style="width: 18rem;">
+								<img src="/bourvence/img/products/vignettes/<?= $productFilter['prod_img'] ?>" class="card-img-top" alt="<?= $productFilter['prod_name'] ?>" height="300">
+					  			<h5 class="card-title center"><strong><?= $productFilter['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
-					   				<p class="card-text"><small><?= $domaine['prod_desc'] ?></small></p>
+					   				<p class="card-text"><small><?= $productFilter['prod_desc'] ?></small></p>
 					  			</div>
 					  			<div class="card-footer">
-					  				<a href="product.php?prod_id=<?=$domaine['prod_id']?>" class="btn btn-product">Voir le produit</a>
+					  				<a href="product.php?prod_id=<?=$productFilter['prod_id']?>" class="btn btn-product">Voir le produit</a>
 					  			</div>
 							</div>
 						</div>
 						<?php endforeach ?>
-					</div>										
+					</div>
 				</div>
 			</div>
-				
+			
 			<a class="ancre" href="#debut"><i class="bi bi-arrow-up-circle-fill" style="font-size: 5rem; color: #573b50;"></i></a>
-				</div>
-			</div>
 
+			<div>
+				<p class="conseil">
+					N’hésitez pas à venir à la Cave Bourvence à Plan-de-Cuques, à côté de Marseille et d’Allauch, pour découvrir notre large choix de vins, de champagnes, de bières, de jus de fruits et de spiritueux, accompagné de nos conseils.<br/><br/>
+					Pour vos idées cadeaux, vous y trouverez également des accessoires, de la verrerie ainsi que quelques articles d’épicerie fine, à votre disposition.
+				</p>
+			</div>
 			<div>
 				<h3 class="center">Une question ?</h3>
 				<?php include('contactForm.php') ?>
 			</div>
 		</main>
 
-		<?php include('footer.php');?>
+		<?php include('footer.php') ?>
 	</body>
 </html>

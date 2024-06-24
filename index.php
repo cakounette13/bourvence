@@ -28,7 +28,7 @@ $colors = $products->getColorFamily();
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 		<script src="tarteaucitron/tarteaucitron.js"></script>
 		<script type="text/javascript" src="js/cookies.js"></script>
-		<script type="text/javascript" src="js/modal.js"></script>
+		<!--<script type="text/javascript" src="js/modal.js"></script> En attendant que cela fonctionne-->
 		
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z36N7G2D2K"></script>

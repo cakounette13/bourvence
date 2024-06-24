@@ -1,7 +1,9 @@
 <?php
 require('../connect.php');
 require('../class/ProductManager.php');
-
+require('../class/Stat.php');
+require('../class/StatManager.php');
+require('../process/process_cookie.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,20 +38,26 @@ require('../class/ProductManager.php');
 			$product = new ProductManager($db);
 			$regionsFrance = $product->getRegionFrance();
 			?>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<h1 class="center">Nos vins par Région</h1>
-					<?php foreach($regionsFrance as $region): ?>
-						<div class="col-sm-2 card-regions">
-							<div class="card" style="width: 10rem;">
-								<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
-					  			<h5 class="card-title center"><strong><?= $region['region_name']  ?></strong></h5>
-					  			<div class="card-footer">
-					  				<a href="products.php?region_id=<?= $region['region_id']?>" class="btn btn-product">En savoir plus</a>
-					  			</div>
+					<div class="col-xs-12 col-sm-3 col-lg-2 filter">
+						<?php include('filter.php') ?>
+					</div>
+
+					<div class="row col-xs-12 col-sm-8 col-lg-9">
+						<h1 class="center">Nos vins par Région</h1>
+						<?php foreach($regionsFrance as $region): ?>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card card-regions" style="width: 10rem;">
+									<img src="/bourvence/img/regions/<?= $region['region_name'] ?>.png" class="card-img-top" alt="<?= $region['region_name']  ?>" height="100">
+						  			<h5 class="card-title center"><strong><?= $region['region_name']  ?></strong></h5>
+						  			<div class="card-footer">
+						  				<a href="products.php?region_id=<?= $region['region_id']?>" class="btn btn-product">En savoir plus</a>
+						  			</div>
+								</div>
 							</div>
-						</div>
-					<?php endforeach ?>
+						<?php endforeach ?>
+					</div>
 				</div>
 			</div>
 			

@@ -13,7 +13,7 @@
 	     	<div class="modal-footer">
 	     		<a href="/bourvence/index.php" type="button" class="btn btn-bloc" id="modal-close">Oui</a>
 	     		<a href="https://google.fr" type="button" class="btn btn-bloc" onclick='popup.close();'>Non</a>
-	            <p>"L'abus d'alccol est dangereux pour la santé. A consommer avec modération."</p>
+	            <p>"L'abus d'alcool est dangereux pour la santé. A consommer avec modération."</p>
 	        </div>
 	    </div>
 	</div>

@@ -18,11 +18,11 @@ $domaines = $products->getDomaine();
 
 	<div class="container localisation">
 		<div class="row">
-			<div class="col col-md-7 map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5803.6576387225205!2d5.45344!3d43.338771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9be3e91c9dd4d%3A0xd834d0a15c0d6ba4!2sCave%20Bourvence!5e0!3m2!1sfr!2sfr!4v1717497878469!5m2!1sfr!2sfr" width="500" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="col col-lg-7 map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5803.6576387225205!2d5.45344!3d43.338771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9be3e91c9dd4d%3A0xd834d0a15c0d6ba4!2sCave%20Bourvence!5e0!3m2!1sfr!2sfr!4v1717497878469!5m2!1sfr!2sfr"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 				
-			<div class="col col-md-5">
+			<div class="col col-lg-5">
 				<div class="row coord">
 					<h3>Adresse :</h3>
 					<p>

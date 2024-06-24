@@ -1,6 +1,10 @@
 <?php
+session_start();
 require('../connect.php');
 require('../class/ProductManager.php');
+require('../class/Stat.php');
+require('../class/StatManager.php');
+require('../process/process_cookie.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -47,13 +51,25 @@ require('../class/ProductManager.php');
 					$prodByColor = $product->getProductColor($color_id);
 				}
 			?>
-			<div class="container">
-				<div class="row">
-					<?php if(isset($prodByColor)): ?>
+
+			<?php if(!empty($_SESSION['error'])): ?>
+				<div class="alert alert-danger" role="alert">
+					<?= $_SESSION['error'] ?>
+					<?php $_SESSION['error'] = "" ?>
+				</div>
+			<?php endif ?>
+			
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-xs-12 col-sm-3 col-lg-2 filter">
+						<?php include('filter.php') ?>
+					</div>
+					<div class="row col-xs-12 col-sm-8 col-lg-9">
+						<?php if(isset($prodByColor)): ?>
 						<h1 class="center"><?= $prodByColor[0]['color_name'] ?></h1>
 						<?php foreach($prodByColor as $prodCol): ?>
-						<div class="col-sm-4">
-							<div class="card card-products" style="width: 18rem;">
+						<div class="col-md-6 col-lg-4">
+							<div class="card card-products">
 								<img src="/bourvence/img/products/vignettes/<?= $prodCol['prod_img'] ?>" class="card-img-top" alt="<?= $prodCol['prod_name'] ?>" height="300">
 					  			<h5 class="card-title center"><strong><?= $prodCol['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
@@ -75,8 +91,8 @@ require('../class/ProductManager.php');
 							?>
 						</h1>
 						<?php foreach($prodByRegion as $prod): ?>
-						<div class="col-sm-4">
-							<div class="card card-products" style="width: 18rem;">
+						<div class="col-md-6 col-lg-4">
+							<div class="card card-products">
 								<img src="/bourvence/img/products/vignettes/<?= $prod['prod_img'] ?>" class="card-img-top" alt="<?= $prod['prod_name'] ?>" max-width="100%" height="auto">
 					  			<h5 class="card-title center"><strong><?= $prod['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
@@ -91,8 +107,8 @@ require('../class/ProductManager.php');
 					<?php else: ?>
 						<h1 class="center"><?= $products[0]['family_name'] ?></h1>
 						<?php foreach($products as $product): ?>
-						<div class="col-sm-4">
-							<div class="card card-products" style="width: 18rem;">
+						<div class="col-md-6 col-lg-4">
+							<div class="card card-products">
 								<img src="/bourvence/img/products/vignettes/<?= $product['prod_img'] ?>" class="card-img-top" alt="<?= $product['prod_name'] ?>" height="300">
 					  			<h5 class="card-title center"><strong><?= $product['prod_name'] ?></strong></h5>
 					  			<div class="card-body">
@@ -105,6 +121,7 @@ require('../class/ProductManager.php');
 						</div>
 						<?php endforeach ?>
 					<?php endif ?>
+					</div>										
 				</div>
 			</div>
 			
@@ -116,6 +133,7 @@ require('../class/ProductManager.php');
 					Pour vos idées cadeaux, vous y trouverez également des accessoires, de la verrerie ainsi que quelques articles d’épicerie fine, à votre disposition.
 				</p>
 			</div>
+
 			<div>
 				<h3 class="center">Une question ?</h3>
 				<?php include('contactForm.php') ?>
