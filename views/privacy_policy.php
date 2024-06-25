@@ -11,8 +11,8 @@ require('../process/process_cookie.php');
 		<meta name="description" content="Politique de confidentialité de la Cave Bourvence">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Politique de confidentialité</title>
-		<link rel="stylesheet" href="../css/style.css">
 
+		<link rel="stylesheet" href="../css/style.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -32,8 +32,8 @@ require('../process/process_cookie.php');
 	</head>
 	<body class="politique">
 		<header>
-			<h1>Politique de confidentialité</h1>
-				<h2>cavebourvence.fr</h2>
+			<h1	class="center">Politique de confidentialité</h1>
+				<h2 class="center">cavebourvence.fr</h2>
 		</header>
 		<main>	
 			<article>
@@ -138,7 +138,7 @@ require('../process/process_cookie.php');
 			<article>
 				<h3>ARTICLE 4 : RESPONSABLE DU TRAITEMENT DES DONNÉES ET DÉLÉGUÉ À LA PROTECTION DES DONNÉES</h3>  
 					<h4>Article 4.1 : Le responsable du traitement des données</h4>  
-					<P>Les données à caractère personnelles sont collectées par la Cave Bourvence, SAS au capital de 1.000 €, dont le numéro d’immatriculation est le 900 195 280.</P>
+					<P>Les données à caractère personnelles sont collectées par la Cave Bourvence, SAS au capital de 141.400 €, dont le numéro d’immatriculation est le 900 195 280.</P>
 
 					<p>Le responsable du traitement des données à caractère personnel peut être contacté de la manière suivante :</p>
 					<ul>

@@ -12,6 +12,7 @@ require('process/process_auth.php');
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Page login du site de la Cave Bourvence">
 	<title>Cave Bourvence, Votre cave à vin</title>
 
 	<link rel="stylesheet" href="css/style.css">

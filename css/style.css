@@ -161,6 +161,7 @@ form.search {
 	position: absolute;
 	img{
 		width: 60%;
+		height: auto;
 	}
 }
 
@@ -364,6 +365,7 @@ a.btn.btn-product,  a.btn.btn-post{
 .fiche img {
 	max-width: 100%;
 	padding-right: 50px;
+	height: auto;
 }
 
 .desc-prod {
@@ -402,6 +404,7 @@ a.btn.btn-product,  a.btn.btn-post{
 
 .img-domaine img {
 	width: 100%;
+	height: auto;
 }
 
 /* Page qui sommes-nous ? */
@@ -420,6 +423,7 @@ a.btn.btn-product,  a.btn.btn-post{
 .modal-header {
 	img {
 		max-width: 50% !important;
+		height: auto;
 		margin: auto;
 	}
 }
@@ -453,6 +457,7 @@ a.btn.btn-product,  a.btn.btn-post{
 	}
 	.carousel-img img{
 		width: 100%;
+		height: auto;
 	}
 }
 

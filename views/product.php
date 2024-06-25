@@ -18,6 +18,7 @@ $colorProd = $products->getColor($prod_id);
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Page de détail d'un produit de la Cave Bourvence">
 		<title>Cave Bourvence, Votre cave à vin</title>
 
 		<link rel="stylesheet" href="/bourvence/css/style.css">
