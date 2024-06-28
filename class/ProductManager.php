@@ -392,11 +392,11 @@ class ProductManager {
 	public function getAllDomaines($frs_id="") {
 		// Sélection de tous les domaines que l'on veut présenter
 		if(empty($frs_id)) {
-			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection')";
+			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('Alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Chateau de La Greffiere', 'Famille Fabre', 'Grands vins du vieux monde', 'Joseph cartron', 'Leda', 'Lionel Faury', 'Manoir du Capucin - Bayon-Pichon', 'Melody - Marc+Marlene', 'Domaine Des Bormettes', 'Cellier Des Chartreux', 'Les Jardinettes', 'Vinho Selection')";
 			$stmt = $this->_db->prepare($sql);
 		} else {
 			// Sélection de tous les produits d'un seul domaine
-			$sql = "SELECT * FROM fournisseurs F INNER JOIN products P ON (F.frs_id = P.frs_id) WHERE frs_name IN('alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Earl Chateau de La Greffiere', 'Famille Fabre Sarl', 'Grands vins du vieux monde', 'joseph cartron', 'leda', 'lionel faury', 'manoir du capucin - earl bayon-pichon', 'melody - marc+marlene', 'Sc Domaine Des Bormettes', 'Sca Cellier Des Chartreux', 'scea les jardinettes', 'vinho selection') AND P.frs_id= :frs_id";
+			$sql = "SELECT * FROM fournisseurs F INNER JOIN products P ON (F.frs_id = P.frs_id) WHERE frs_name IN('Alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Chateau de La Greffiere', 'Famille Fabre', 'Grands vins du vieux monde', 'Joseph cartron', 'Leda', 'Lionel Faury', 'Manoir du Capucin - Bayon-Pichon', 'Melody - Marc+Marlene', 'Domaine Des Bormettes', 'Cellier Des Chartreux', 'Les Jardinettes', 'Vinho Selection') AND P.frs_id= :frs_id";
 			$stmt = $this->_db->prepare($sql);
 			$stmt->bindparam(':frs_id', $frs_id);
 		}
