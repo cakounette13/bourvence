@@ -65,10 +65,6 @@ $colorProd = $products->getColor($prod_id);
 							<div class="col-xs-12 col-md-8"><?= $product[0]['prod_desc'] ?></div>
 						</div>
 						<div class="row desc-prod">
-							<div class="col-xs-12 col-md-4"><strong>Prix : </strong></div>
-							<div class="col-xs-12 col-md-8"><?= number_format($product[0]['prod_prix_ttc'], 2) ?> €</div>
-						</div>
-						<div class="row desc-prod">
 							<div class="col-xs-12 col-md-4"><strong>Contenant : </strong></div>
 							<?php if($cont[0]['cont_name'] == 'Non définie'): ?>
 								<div class="col-xs-12 col-md-8">-</div>

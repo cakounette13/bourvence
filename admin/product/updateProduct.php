@@ -75,10 +75,6 @@ $contenants = $product2->getContenant();
 			<textarea class="col-lg-7 col-12" type="textarea" name="prod_desc" rows="4" cols="20" id="desc"><?= $product[0]['prod_desc'] ?></textarea>
 		</div>
 		<div class="form-group row">
-			<label class="col-lg-4 col-12"for="prix">Prix TTC du produit</label>
-			<input class="col-lg-4 col-12" type="text" name="prod_prix_ttc" value="<?= number_format($product[0]['prod_prix_ttc'], 2) ?>" id="prix">
-		</div>
-		<div class="form-group row">
 			<input type="hidden" name="old_img" value="<?= $product[0]['prod_img'] ?>">
 			<img class="col-lg-7 col-12" src="../../img/products/<?= $product[0]['prod_img']?>" alt="<?= $product[0]['prod_img'] ?>" width="50" height="50">	
 		</div>

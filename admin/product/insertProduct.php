@@ -63,10 +63,6 @@ $contenants = $product->getContenant();
 			<textarea class="col-lg-7 col-12" type="textarea" name="prod_desc" rows="4" cols="20" id="desc" required></textarea>
 		</div>
 		<div class="form-group row">
-			<label class="col-lg-4 col-12"for="prix">Prix TTC du produit</label>
-			<input class="col-lg-4 col-12" type="float" name="prod_prix_ttc" id="prix" required>
-		</div>
-		<div class="form-group row">
 			<label class="col-lg-4 col-12"for="img">Image à télécharger</label>
 			<input class="col-lg-7 col-12" type="file" name="new_img" id="img" required>
 		</div>

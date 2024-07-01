@@ -62,7 +62,6 @@ $pages = $product->getPages();
 					<th class="center">Id</th>
 					<th class="center">nom</th>
 					<th class="center">Description</th>
-					<th class="center">Prix TTC</th>
 					<th class="center" colspan="2">Actions</th>
 				</thead>
 				<tbody>
@@ -71,7 +70,6 @@ $pages = $product->getPages();
 							<td><?= $product['prod_id'] ?></td>
 							<td><?= $product['prod_name'] ?></td>
 							<td><?= $product['prod_desc'] ?></td>
-							<td class="right"><?= number_format($product['prod_prix_ttc'], 2)?></td>
 							<td>
 								<a href="updateProduct.php?prod_id=<?= $product['prod_id'] ?>"><i class="bi bi-pencil-fill"></i></a>
 							</td>

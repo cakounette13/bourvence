@@ -65,11 +65,5 @@ $appellations = $product->getAppell();
             <?php endforeach ?> 
     </select>
 
-    <label class="col-12" for="price_min">Prix Minimum</label>
-    <input class="col-12" type="number" name="price_min" id="price_min" step="0.10">
-
-    <label class="col-12" for="price_max">Prix Maximum</label>
-    <input class="col-12" type="number" name="price_max" id="price_max" step="0.10">
-
     <button class="btn-filter col-sm-12" type="submit" name="submitFilter">Filtre</button>
 </form>

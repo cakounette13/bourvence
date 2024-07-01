@@ -8,7 +8,7 @@ $products = new ProductManager($db);
 
 if(isset($_POST['submitInsertProduct'])) {
 
-	if(isset($_POST['prod_id']) AND !empty($_POST['prod_id']) AND isset($_POST['prod_name']) AND !empty($_POST['prod_name']) AND isset($_POST['prod_desc']) AND !empty($_POST['prod_desc']) AND isset($_POST['prod_prix_ttc']) AND !empty($_POST['prod_prix_ttc']) AND isset($_FILES['new_img']) AND isset($_POST['family_id']) AND !empty($_POST['family_id']) AND isset($_POST['appell_id']) AND isset($_POST['region_id']) AND isset($_POST['frs_id']) AND !empty($_POST['frs_id']) AND isset($_POST['color_id']) AND isset($_POST['cont_id'])) {
+	if(isset($_POST['prod_id']) AND !empty($_POST['prod_id']) AND isset($_POST['prod_name']) AND !empty($_POST['prod_name']) AND isset($_POST['prod_desc']) AND !empty($_POST['prod_desc']) AND isset($_FILES['new_img']) AND isset($_POST['family_id']) AND !empty($_POST['family_id']) AND isset($_POST['appell_id']) AND isset($_POST['region_id']) AND isset($_POST['frs_id']) AND !empty($_POST['frs_id']) AND isset($_POST['color_id']) AND isset($_POST['cont_id'])) {
 		// Récupération des données du formulaire
 		$prod_id = (int) trim(htmlspecialchars($_POST['prod_id']));
 		$product = $products->getProduct($prod_id);
@@ -19,7 +19,6 @@ if(isset($_POST['submitInsertProduct'])) {
 		$data['prod_id'] = (int) trim(htmlspecialchars($_POST['prod_id']));
 		$data['prod_name'] = trim(htmlspecialchars($_POST['prod_name']));
 		$data['prod_desc'] = trim(htmlspecialchars($_POST['prod_desc']));
-		$data['prod_prix_ttc'] = trim(htmlspecialchars($_POST['prod_prix_ttc']));
 		$data['prod_img'] = $_FILES['new_img']['name'];
 		$data['family_id'] = (int) trim(htmlspecialchars($_POST['family_id']));
 		$data['appell_id'] = (int) trim(htmlspecialchars($_POST['appell_id']));
@@ -43,12 +42,11 @@ if(isset($_POST['submitInsertProduct'])) {
 }
 
 if(isset($_POST['submitUpdateProduct'])) {
-	if(isset($_POST['prod_id']) AND isset($_POST['prod_name']) AND isset($_POST['prod_desc']) AND isset($_POST['prod_prix_ttc']) AND isset($_POST['old_img']) AND isset($_POST['family_id']) AND isset($_POST['appell_id']) AND isset($_POST['region_id']) AND isset($_POST['frs_id']) AND isset($_POST['color_id']) AND isset($_POST['cont_id'])) {
+	if(isset($_POST['prod_id']) AND isset($_POST['prod_name']) AND isset($_POST['prod_desc']) AND isset($_POST['old_img']) AND isset($_POST['family_id']) AND isset($_POST['appell_id']) AND isset($_POST['region_id']) AND isset($_POST['frs_id']) AND isset($_POST['color_id']) AND isset($_POST['cont_id'])) {
 		// Récupération des données du formulaire
 		$data['prod_id'] = (int) trim(htmlspecialchars($_POST['prod_id']));
 		$data['prod_name'] = trim(htmlspecialchars($_POST['prod_name']));
 		$data['prod_desc'] = trim(htmlspecialchars($_POST['prod_desc']));
-		$data['prod_prix_ttc'] = trim(htmlspecialchars($_POST['prod_prix_ttc']));
 		$data['family_id'] = (int) trim(htmlspecialchars($_POST['family_id']));
 		$data['appell_id'] = (int) trim(htmlspecialchars($_POST['appell_id']));
 		$data['region_id'] = (int) trim(htmlspecialchars($_POST['region_id']));

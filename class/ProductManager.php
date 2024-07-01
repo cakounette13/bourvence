@@ -33,12 +33,11 @@ class ProductManager {
 
 	// fonction pour créer un nouveau produit
 	public function insertProduct(Product $product) {
-		$sql = "INSERT INTO products (prod_id, prod_name, prod_desc, prod_prix_ttc, prod_img, family_id, appell_id, region_id, frs_id, color_id, cont_id) VALUES (:prod_id, :prod_name, :prod_desc, :prod_prix_ttc, :prod_img, :family_id, :appell_id, :region_id, :frs_id, :color_id, :cont_id)";
+		$sql = "INSERT INTO products (prod_id, prod_name, prod_desc, prod_img, family_id, appell_id, region_id, frs_id, color_id, cont_id) VALUES (:prod_id, :prod_name, :prod_desc, :prod_img, :family_id, :appell_id, :region_id, :frs_id, :color_id, :cont_id)";
 		$stmt = $this->_db->prepare($sql);
 		$prod_id = (int) trim(htmlspecialchars($product->getProd_id()));
 		$prod_name = trim(htmlspecialchars($product->getProd_name()));
 		$prod_desc = trim(htmlspecialchars($product->getProd_desc()));
-		$prod_prix_ttc = trim(htmlspecialchars($product->getProd_prix_ttc()));
 		$prod_img = trim(htmlspecialchars($product->getProd_img()));
 		$family_id = (int) trim(htmlspecialchars($product->getFamily_id()));
 		$appell_id = trim(htmlspecialchars($product->getAppell_id()));
@@ -49,7 +48,6 @@ class ProductManager {
 		$stmt->bindparam(':prod_id', $prod_id);
 		$stmt->bindparam(':prod_name', $prod_name);
 		$stmt->bindparam(':prod_desc', $prod_desc);
-		$stmt->bindparam(':prod_prix_ttc', $prod_prix_ttc);
 		$stmt->bindparam(':prod_img', $prod_img);
 		$stmt->bindparam(':family_id', $family_id);
 		$stmt->bindparam(':appell_id', $appell_id);
@@ -62,12 +60,11 @@ class ProductManager {
 
 	// fonction de mise à jour d'un produit existant
 	public function updateProduct(Product $product) {
-		$sql = "UPDATE products SET prod_name = :prod_name, prod_desc = :prod_desc, prod_prix_ttc = :prod_prix_ttc, prod_img = :prod_img, family_id = :family_id, appell_id = :appell_id, region_id = :region_id, frs_id = :frs_id, color_id = :color_id, cont_id = :cont_id WHERE prod_id = :prod_id";
+		$sql = "UPDATE products SET prod_name = :prod_name, prod_desc = :prod_desc, prod_img = :prod_img, family_id = :family_id, appell_id = :appell_id, region_id = :region_id, frs_id = :frs_id, color_id = :color_id, cont_id = :cont_id WHERE prod_id = :prod_id";
 		$stmt = $this->_db->prepare($sql);
 		$prod_id = (int) trim(htmlspecialchars($product->getProd_id()));
 		$prod_name = htmlspecialchars($product->getProd_name());
 		$prod_desc = htmlspecialchars($product->getProd_desc());
-		$prod_prix_ttc = htmlspecialchars($product->getProd_prix_ttc());
 		$prod_img = htmlspecialchars($product->getProd_img());
 		$family_id = (int) trim(htmlspecialchars($product->getFamily_id()));
 		$appell_id = (int) trim(htmlspecialchars($product->getAppell_id()));
@@ -78,7 +75,6 @@ class ProductManager {
 		$stmt->bindparam(':prod_id', $prod_id);
 		$stmt->bindparam(':prod_name', $prod_name);
 		$stmt->bindparam(':prod_desc', $prod_desc);
-		$stmt->bindparam(':prod_prix_ttc', $prod_prix_ttc);
 		$stmt->bindparam(':prod_img', $prod_img);
 		$stmt->bindparam(':family_id', $family_id);
 		$stmt->bindparam(':appell_id', $appell_id);

@@ -1,7 +1,7 @@
 <?php
 
 class product {
-	protected $prod_id, $prod_name, $prod_desc, $prod_prix_ttc, $prod_img, $family_id, $appell_id, $region_id, $frs_id, $color_id, $cont_id;
+	protected $prod_id, $prod_name, $prod_desc, $prod_img, $family_id, $appell_id, $region_id, $frs_id, $color_id, $cont_id;
 
 	// Déclaration de l'attribut statique $error
 	protected static $error;
@@ -10,7 +10,6 @@ class product {
 	const MSG_ERROR_ID = 'ID doit être un entier.';
 	const MSG_ERROR_NAME = 'La dénomination doit être une chaîne de caractères.';
 	const MSG_ERROR_DESC = 'La description doit être une chaîne de caractères.';
-	const MSG_ERROR_PRIX = 'Le pris TTC doit un nombre avec 2 décimales.';
 	const MSG_ERROR_IMG = 'L\'image doit être au format png ou jpeg.';
 	const MSG_ERROR_FAMILY = 'La famille doit être choisie dans la liste.';
 	const MSG_ERROR_APPELL = 'L\'appellation doit être choisie dans la liste.';
@@ -27,7 +26,6 @@ class product {
 		}
 		$this->setProd_name($data['prod_name']);
 		$this->setProd_desc($data['prod_desc']);
-		$this->setProd_prix_ttc($data['prod_prix_ttc']);
 		$this->setProd_img($data['prod_img']);
 		$this->setfamily_id($data['family_id']);
 		$this->setAppell_id($data['appell_id']);
@@ -75,15 +73,6 @@ class product {
 		} else {
 			// appel de setError si la valeur attendue n'est pas conforme
 			$this->setError(self::MSG_ERROR_DESC);
-		}	
-	}
-
-	public function setProd_prix_ttc($prod_prix_ttc) {
-		if(is_numeric($prod_prix_ttc)) {
-			$this->prod_prix_ttc = $prod_prix_ttc;
-		} else {
-			// appel de setError si la valeur attendue n'est pas conforme
-			$this->setError(self::MSG_ERROR_PRIX);
 		}	
 	}
 
@@ -162,10 +151,6 @@ class product {
 
 	public function getProd_desc() {
 		return $this->prod_desc;
-	}
-
-	public function getProd_prix_ttc() {
-		return $this->prod_prix_ttc;
 	}
 
 	public function getProd_img() {

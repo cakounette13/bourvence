@@ -12,8 +12,6 @@ if(isset($_POST['submitFilter'])) {
 	$cont_id = trim(htmlspecialchars(isset($_POST['cont']) ? $_POST['cont'] : ''));
 	$region_id = trim(htmlspecialchars(isset($_POST['region']) ? $_POST['region'] : ''));
 	$appell_id = trim(htmlspecialchars(isset($_POST['appell']) ? $_POST['appell'] : ''));
-	$price_min = trim(htmlspecialchars(isset($_POST['price_min']) ? $_POST['price_min'] : ''));
-	$price_max = trim(htmlspecialchars(isset($_POST['price_max']) ? $_POST['price_max'] : ''));
 	
 	$sql = "SELECT * FROM products WHERE 1=1";
 	if ($family_id) {
@@ -31,12 +29,7 @@ if(isset($_POST['submitFilter'])) {
 	if ($appell_id) {
 	    $sql .= " AND appell_id = :appell_id";
 	}
-	if ($price_min) {
-	    $sql .= " AND prod_prix_ttc >= :price_min";
-	}
-	if ($price_max) {
-	    $sql .= " AND prod_prix_ttc <= :price_max";
-	}
+	
 	$stmt = $db->prepare($sql);
 
 	if ($family_id) {
