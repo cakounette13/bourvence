@@ -10,6 +10,7 @@ $prod_id = (int) htmlspecialchars($_GET['prod_id']);
 $products = new ProductManager($db);
 $product = $products->getProduct($prod_id);
 $appell = $products->getAppell($prod_id);
+$frs = $products->getFrs($prod_id);
 $cont = $products->getContenant($prod_id);
 $colorProd = $products->getColor($prod_id);
 ?>
@@ -59,7 +60,10 @@ $colorProd = $products->getColor($prod_id);
 							<div class="col-xs-12 col-md-8"><?= $appell[0]['appell_name'] ?></div>
 							<?php endif ?>
 						</div>
-												
+						<div class="row desc-prod">
+							<div class="col-xs-12 col-md-4"><strong>Domaine : </strong></div>
+							<div class="col-xs-12 col-md-8"><?= $frs[0]['frs_name'] ?></div>
+						</div>					
 						<div class="row desc-prod">
 							<div class="col-xs-12 col-md-4"><strong>Description : </strong></div>
 							<div class="col-xs-12 col-md-8"><?= $product[0]['prod_desc'] ?></div>

@@ -57,7 +57,7 @@ $domaines = $products->getAllDomaines($frs_id);
 					<div class="col-12 col-lg-6">
 						<p><?= $domaines[0]['frs_desc'] ?></p>
 						<br>
-						<a href="<?= $domaines[0]['frs_site_web'] ?>" class="btn btn-product">Accès vers leur site</a>
+						<a href="<?= $domaines[0]['frs_site_web'] ?>" class="btn btn-product" target="_blanck">Accès vers leur site</a>
 					</div>
 
 				</div>
