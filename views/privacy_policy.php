@@ -148,7 +148,7 @@ require('../process/process_cookie.php');
 					</ul>
 
 					<h4>Article 4.2 : Le délégué à la protection des données</h4>  
-					<p>Le délégué à la protection des données de l’entreprise est Mme DELRIEUX Carine joignable au mail <a href="mailto:carinedelrieux@gmail.com">cavebourvence@gmail.com</a>.</p> 
+					<p>Le délégué à la protection des données de l’entreprise est Mme DELRIEUX Carine joignable au mail <a href="mailto:cavebourvence@gmail.com">cavebourvence@gmail.com</a>.</p> 
 
 					<p>Si vous estimez, après nous avoir contactés, que vos droits “Informatique et Libertés”, ne sont pas respectés, vous pouvez adresser une information à la CNIL.</p> 
 			</article>

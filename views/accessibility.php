@@ -54,20 +54,21 @@ require('../process/process_cookie.php');
 		<article>
 			<h3>État de conformité</h3>
 			<p>
-				cavebourvence.fr est totalement conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4 en raison des non-conformités et des dérogations énumérées ci-dessous.
+				cavebourvence.fr est presque totalment conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4 en raison des non-conformités et des dérogations énumérées ci-dessous.
 			</p>
 		</article>
 		<article>
 			<h3>Résultats des tests</h3>
-			<p>L’audit de conformité réalisé par la Cave Bourvence révèle que : 100% des critères du RGAA version 4 sont respectés.</p>
+			<p>L’audit de conformité réalisé par la Cave Bourvence révèle que : 99% des critères du RGAA version 4 sont respectés.</p>
 		</article>
 		<article>
-			<h3>Contenus non accessibles</h3>
-			<p>Aucun contenu n'est déclaré non-accessible.</p>
+			<h3>Contenus non accessibles en AAA</h3>
+			<p>Flèches dans le carrousel en page d'accueil</p>
+			<p>Pop-up Citron "Tarte au citron"</p>
 		</article>
 		<article>
 			<h3>Établissement de cette déclaration d’accessibilité</h3>
-			<p>Cette déclaration a été établie le 24 avril 2023.</p>
+			<p>Cette déclaration a été établie le 3 juillet 2024.</p>
 		</article>
 		<article>
 			<h3>Technologies utilisées pour la réalisation du site</h3>
@@ -100,14 +101,18 @@ require('../process/process_cookie.php');
 		</article>
 		<article>
 			<h3>Pages du site ayant fait l’objet de la vérification de conformité</h3>
-			<p>Page d’accueil : <a href="../index.html">cavebourvence.fr</a></p>
-			<p>Page de contact : <a href="contact.html">cavebourvence.fr/contact</a></p>
-			<p>Page de déclaration d'accessibilité : <a href="accessibilite.html">cavebourvence.fr/accessibilite</a></p>
+			<p>Page d’accueil : <a href="../index.php">cavebourvence.fr</a></p>
+			<p>Page de contact : <a href="/bourvence/views/contact.php">cavebourvence.fr/views/contact</a></p>
+			<p>Page de déclaration d'accessibilité : <a href="/bourvence/views/accessibility.php">cavebourvence.fr/views/accessibility</a></p>
+			<p>Page de groupement des produits : <a href="/bourvence/views/products.php">cavebourvence.fr/views/products</a></p>
+			<p>Page de groupement des vins étrangers : <a href="/bourvence/views/strangers.php">cavebourvence.fr/views/strangers</a></p>
+			<p>Page de groupement des régions : <a href="/bourvence/views/regions.php">cavebourvence.fr/views/regions</a></p>
+			<p>Page de groupement des domaines : <a href="/bourvence/views/domaines.php">cavebourvence.fr/views/domaines</a></p>
 		</article>
 		<article>
 			<h3>Retour d’information et contact</h3>
 			<p>Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de cavebourvence.fr pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.</p>
-			<p>Envoyer un message à l'adresse <a href="mailto:contact@cavebourvence.fr">contact@cavebourvence.fr</a></p>
+			<p>Envoyer un message à l'adresse <a href="mailto:cavebourvence@gmail.com">cavebourvence@gmail.com</a></p>
 		</article>
 		<article>
 			<h3>Voies de recours</h3>
