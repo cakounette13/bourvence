@@ -43,6 +43,8 @@ $colors = $products->getColorFamily();
 	</head>
 
 	<body>
+		<?php include('views/modal.php') ?>
+		
 		<?php if(!empty($_SESSION['error'])): ?>
 			<div class="alert alert-danger" role="alert">
 				<?= $_SESSION['error'] ?>
@@ -58,6 +60,6 @@ $colors = $products->getColorFamily();
 
 		<?php include('views/footer.php') ?>
 		
-		<?php include('views/modal.php') ?>
+		
 	</body>
 </html>

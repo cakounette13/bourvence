@@ -36,7 +36,7 @@ $domaines = $products->getAllDomaines($frs_id);
 		</script>
 	</head>
 
-	<body>
+	<body id="debut">
 		<?php include('nav.php') ?>
 
 		<main>

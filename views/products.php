@@ -32,7 +32,8 @@ require('../process/process_cookie.php');
 		</script>
 	</head>
 
-	<body  id="debut">
+	<body id="debut">
+		
 		<?php include('nav.php'); ?>
 
 		<main>
