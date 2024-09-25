@@ -85,7 +85,7 @@ DROP TABLE IF EXISTS `db_bourvence`.`users` ;
 CREATE TABLE IF NOT EXISTS `db_bourvence`.`users` (
   `user_id` INT(11) NOT NULL AUTO_INCREMENT,
   `user_login` VARCHAR(20) NOT NULL,
-  `user_mdp` VARCHAR(35) NOT NULL,
+  `user_mdp` VARCHAR(255) NOT NULL,
   `role_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`),
   CONSTRAINT `fk_users_roles`
@@ -394,8 +394,8 @@ INSERT INTO roles (role_id, role_name, role_level) VALUES
 -- ----------------------------------------------------------
 /* Table Users */
 INSERT INTO users (user_id, user_login, user_mdp, role_id) VALUES
-(1, "RESPONSABLE", "4bbca7401cf95d556c27b899f159a48f", 1),
-(2, "SALARIE", "13448471d89a9cd8d7f71026a0334ec8", 2);
+(1, "RESPONSABLE", "$2y$10$o26fDh0Y7uAMTTSiWsrewuy6WASiAQBFGD2dDWouzRdJDCJSZfVsK", 1),
+(2, "SALARIE", "$2y$10$U6GtEQKdvCJuWR6JQ6DLXO3OBisFjDDM2/buMaXS8iywfeXKh1dba", 2);
 
 
 -- ----------------------------------------------------------

@@ -208,3 +208,136 @@ Stack trace:
 [25-Sep-2024 17:13:11 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
 [25-Sep-2024 17:13:11 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
 [25-Sep-2024 17:13:11 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:14:59 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:14:59 UTC] PHP Stack trace:
+[25-Sep-2024 17:14:59 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:14:59 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:14:59 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:18:38 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:18:38 UTC] PHP Stack trace:
+[25-Sep-2024 17:18:38 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:18:38 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:19:40 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:19:40 UTC] PHP Stack trace:
+[25-Sep-2024 17:19:40 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:19:40 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:20:20 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:20:20 UTC] PHP Stack trace:
+[25-Sep-2024 17:20:20 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:20:20 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:21:15 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:21:15 UTC] PHP Stack trace:
+[25-Sep-2024 17:21:15 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:21:15 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:22:07 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:22:07 UTC] PHP Stack trace:
+[25-Sep-2024 17:22:07 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:22:07 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:22:07 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:22:31 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:22:31 UTC] PHP Stack trace:
+[25-Sep-2024 17:22:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:22:31 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:22:31 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:23:09 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 30
+[25-Sep-2024 17:23:09 UTC] PHP Stack trace:
+[25-Sep-2024 17:23:09 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:23:09 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:23:09 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'GDFHSDGH') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:23:09 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:23:09 UTC] PHP Stack trace:
+[25-Sep-2024 17:23:09 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:23:09 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:23:35 UTC] PHP Warning:  Undefined array key "count" in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:23:35 UTC] PHP Stack trace:
+[25-Sep-2024 17:23:35 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:23:35 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:25:31 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:25:31 UTC] PHP Stack trace:
+[25-Sep-2024 17:25:31 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:25:31 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:26:24 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:26:24 UTC] PHP Stack trace:
+[25-Sep-2024 17:26:24 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:26:24 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:28:26 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:28:26 UTC] PHP Stack trace:
+[25-Sep-2024 17:28:26 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:28:26 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:28:26 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:28:40 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:28:40 UTC] PHP Stack trace:
+[25-Sep-2024 17:28:40 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:28:40 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:28:40 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:31:02 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 29
+[25-Sep-2024 17:31:02 UTC] PHP Stack trace:
+[25-Sep-2024 17:31:02 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:31:02 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:31:02 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'SDFHDSGH') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:31:02 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\class\UserManager.php on line 29
+[25-Sep-2024 17:31:02 UTC] PHP Stack trace:
+[25-Sep-2024 17:31:02 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:31:02 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:31:02 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'SDFHDSGH') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:31:02 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 31
+[25-Sep-2024 17:31:02 UTC] PHP Stack trace:
+[25-Sep-2024 17:31:02 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:31:02 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:31:02 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'SDFHDSGH') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:31:02 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:31:02 UTC] PHP Stack trace:
+[25-Sep-2024 17:31:02 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:31:02 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:32:25 UTC] PHP Warning:  Undefined array key "count" in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:32:25 UTC] PHP Stack trace:
+[25-Sep-2024 17:32:25 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:32:25 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:33:05 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:33:05 UTC] PHP Stack trace:
+[25-Sep-2024 17:33:05 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:33:05 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:33:05 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39
+[25-Sep-2024 17:33:05 UTC] PHP Warning:  Undefined array key "user_id" in C:\wamp64\www\bourvence\process\process_auth.php on line 40
+[25-Sep-2024 17:33:05 UTC] PHP Stack trace:
+[25-Sep-2024 17:33:05 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:33:05 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:33:05 UTC] PHP Warning:  Undefined array key "role_level" in C:\wamp64\www\bourvence\process\process_auth.php on line 42
+[25-Sep-2024 17:33:05 UTC] PHP Stack trace:
+[25-Sep-2024 17:33:05 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:33:05 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:33:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\wamp64\www\bourvence\process\process_auth.php:42) in C:\wamp64\www\bourvence\process\process_auth.php on line 43
+[25-Sep-2024 17:33:05 UTC] PHP Stack trace:
+[25-Sep-2024 17:33:05 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:33:05 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:33:05 UTC] PHP   3. header($header = 'location:admin/menu.php') C:\wamp64\www\bourvence\process\process_auth.php:43
+[25-Sep-2024 17:34:19 UTC] PHP Parse error:  syntax error, unexpected token ";" in C:\wamp64\www\bourvence\class\UserManager.php on line 29
+[25-Sep-2024 17:35:06 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 29
+[25-Sep-2024 17:35:06 UTC] PHP Stack trace:
+[25-Sep-2024 17:35:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:35:06 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:35:06 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'gdsfhsfhgfghfdg') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:35:06 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\class\UserManager.php on line 29
+[25-Sep-2024 17:35:06 UTC] PHP Stack trace:
+[25-Sep-2024 17:35:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:35:06 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:35:06 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'gdsfhsfhgfghfdg') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:35:06 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 31
+[25-Sep-2024 17:35:06 UTC] PHP Stack trace:
+[25-Sep-2024 17:35:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:35:06 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:35:06 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'gdsfhsfhgfghfdg') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:35:06 UTC] PHP Warning:  Undefined variable $user_data in C:\wamp64\www\bourvence\class\UserManager.php on line 32
+[25-Sep-2024 17:35:06 UTC] PHP Stack trace:
+[25-Sep-2024 17:35:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:35:06 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:35:06 UTC] PHP   3. UserManager->authUser($user_login = 'RESPONSABLE', $user_mdp = 'gdsfhsfhgfghfdg') C:\wamp64\www\bourvence\process\process_auth.php:34
+[25-Sep-2024 17:35:06 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\wamp64\www\bourvence\process\process_auth.php on line 36
+[25-Sep-2024 17:35:06 UTC] PHP Stack trace:
+[25-Sep-2024 17:35:06 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:35:06 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:36:11 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[25-Sep-2024 17:36:11 UTC] PHP Stack trace:
+[25-Sep-2024 17:36:11 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[25-Sep-2024 17:36:11 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[25-Sep-2024 17:36:11 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39

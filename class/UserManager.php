@@ -17,22 +17,18 @@ class UserManager {
 		$stmt->bindparam(':user_login',$user_login);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-
+		// Vérification du mot de passe haché
 		$passwordHash = $row['user_mdp'];
-		var_dump($passwordHash);
-		var_dump($user_mdp);
-		var_dump(password_verify($user_mdp, $passwordHash));
 		if(password_verify($user_mdp, $passwordHash)) {
+			$user_data['user_mdp'] = $user_mdp;
 			$user_data['count'] = $row['count'];
 			$user_data['user_id'] = $row['user_id'];
 			$user_data['user_login'] = $user_login;
-			$user_data['user_mdp'] = $user_mdp;
 			$user_data['role_level'] = $row['role_level'];
-			var_dump($user_data);
-			return $user_data;
+		} else {
+			$user_data['count'] = 0;
 		}
-
-		
+		return $user_data;
 	}
 
 	// Restriction de l'affichage du menu en fonction des autorisations

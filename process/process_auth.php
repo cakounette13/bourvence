@@ -32,7 +32,7 @@ if(isset($_POST['submitLoginForm'])) {
 		$userManager = new UserManager($db);
 		// Authentification utilisateur
 		$autUser = $userManager->authUser($user_login, $user_mdp);
-		var_dump($autUser);
+
 		if ($autUser['count'] == 0 ) {
 			$msg_error = "Cet accès n'existe pas.";
 		} else {
