@@ -12,18 +12,27 @@ class UserManager {
 	}
 
 	public function authUser($user_login, $user_mdp) {
-		$sql = 'SELECT COUNT(user_id) as count, user_id, R.role_level FROM users U INNER JOIN roles R ON (U.role_id = R.role_id) WHERE user_login = :user_login AND user_mdp = :user_mdp';
+		$sql = 'SELECT COUNT(user_id) as count, user_id, R.role_level, user_mdp FROM users U INNER JOIN roles R ON (U.role_id = R.role_id) WHERE user_login = :user_login';
 		$stmt = $this->_db->prepare($sql);
-		$stmt->bindparam(':user_login', $user_login);
-		$stmt->bindparam(':user_mdp', $user_mdp);
+		$stmt->bindparam(':user_login',$user_login);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-		$user_data['count'] = $row['count'];
-		$user_data['user_id'] = $row['user_id'];
-		$user_data['user_login'] = $user_login;
-		$user_data['user_mdp'] = $user_mdp;
-		$user_data['role_level'] = $row['role_level'];
-		return $user_data;
+
+		$passwordHash = $row['user_mdp'];
+		var_dump($passwordHash);
+		var_dump($user_mdp);
+		var_dump(password_verify($user_mdp, $passwordHash));
+		if(password_verify($user_mdp, $passwordHash)) {
+			$user_data['count'] = $row['count'];
+			$user_data['user_id'] = $row['user_id'];
+			$user_data['user_login'] = $user_login;
+			$user_data['user_mdp'] = $user_mdp;
+			$user_data['role_level'] = $row['role_level'];
+			var_dump($user_data);
+			return $user_data;
+		}
+
+		
 	}
 
 	// Restriction de l'affichage du menu en fonction des autorisations

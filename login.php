@@ -5,6 +5,12 @@ if(isset($_SESSION['user_login']))
 header('location:admin/menu.php');
 
 require('process/process_auth.php');
+
+$mdp = "0107";
+$hash = password_hash($mdp, PASSWORD_DEFAULT);
+var_dump($mdp);
+var_dump($hash);
+
 ?>
 
 <!DOCTYPE html>

@@ -9,7 +9,7 @@ if(isset($_POST['submitLoginForm'])) {
 		// Vérification longueur des valeurs postées
 		$login_length = strlen($user_login);
 		$mdp_length = strlen($user_mdp);
-		if($login_length > 20 OR $mdp_length > 20) {
+		if($login_length > 20 OR $mdp_length > 255) {
 			$msg_error = "Longueur invalide";
 		} else {
 			// Vérification des caractères autorisés
@@ -27,11 +27,12 @@ if(isset($_POST['submitLoginForm'])) {
 				}
 			}
 		}
-		$user_mdp = md5($user_mdp);
+		
 		// Instanciation classe UserManager
 		$userManager = new UserManager($db);
 		// Authentification utilisateur
 		$autUser = $userManager->authUser($user_login, $user_mdp);
+		var_dump($autUser);
 		if ($autUser['count'] == 0 ) {
 			$msg_error = "Cet accès n'existe pas.";
 		} else {
