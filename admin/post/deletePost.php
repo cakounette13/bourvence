@@ -9,7 +9,6 @@ $filename = $basename ."/". basename(__FILE__);
 require('../../process/process_user.php');
 require('../../process/process_permiss.php');
 
-
 $post = new PostManager($db);
 
 if(isset($_GET['post_id']) AND !empty($_GET['post_id']) AND isset($_GET['post_img']) AND !empty($_GET['post_img'])) {

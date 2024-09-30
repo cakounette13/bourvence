@@ -9,6 +9,7 @@ require('../process/process_cookie.php');
 $products = $_SESSION['searchs'];
 $nbr = count($products);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

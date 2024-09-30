@@ -64,4 +64,3 @@ if(isset($_POST['submitFilter'])) {
 	$_SESSION['error'] = "Pas de résultat pour votre recherche ' ". $filter ." '";
 	header('location:../index.php');
 }
-?>

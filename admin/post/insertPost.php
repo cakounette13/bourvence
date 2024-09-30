@@ -17,7 +17,6 @@ $posts = $post->getPost($user_id);
 // Date et heure d'envoi du formulaire
 date_default_timezone_set('Europe/Paris');
 $date = date("Y-m-d");
-
 ?>
 
 <!DOCTYPE html>
@@ -91,5 +90,3 @@ $date = date("Y-m-d");
 	<a role="button" class="btn btn-xs btn-product" href="listPost.php">Retour à la liste</a>
 	<a role="button" class="btn btn-xs btn-product" href="../../index.php">Retour au site</a>
 </div>
-
-

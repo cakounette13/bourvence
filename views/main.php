@@ -2,6 +2,7 @@
 $products = new ProductManager($db);
 $domaines = $products->getDomaine();
 ?>
+
 <main>
 	<img class="etoile" src="img/icons/etoile.png"><h2>Nos domaines à l'affiche</h2>
 	

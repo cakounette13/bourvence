@@ -31,10 +31,8 @@ require('../process/process_permiss.php');
 		<?php endforeach ?>
 	</div>
 	
-	
 	<div class="container center">
 		<a title="retour sur le site Cave Bourvence" role="button" class="btn btn-xs btn-product" href="../index.php">Retourner sur le site</a>
 		<a title="Se déconnecter" role="button" class="btn btn-xs btn-product" href="logout.php">Se déconnecter</a>
 	</div>
-	
 </div>

@@ -5,7 +5,6 @@ if(isset($_SESSION['user_login']))
 header('location:admin/menu.php');
 
 require('process/process_auth.php');
-
 ?>
 
 <!DOCTYPE html>

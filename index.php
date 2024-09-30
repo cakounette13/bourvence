@@ -15,6 +15,7 @@ $families = $products->getFamily();
 $regions = $products->getRegion();
 $colors = $products->getColorFamily();
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -58,8 +59,6 @@ $colors = $products->getColorFamily();
 
 		<?php include('views/main.php') ?>
 
-		<?php include('views/footer.php') ?>
-		
-		
+		<?php include('views/footer.php') ?>		
 	</body>
 </html>

@@ -8,6 +8,7 @@ require('../process/process_cookie.php');
 
 $productsFilter = $_SESSION['filter'];
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

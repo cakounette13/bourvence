@@ -10,6 +10,7 @@ $frs_id = (int) htmlspecialchars($_GET['frs_id']);
 $products = new ProductManager($db);
 $domaines = $products->getAllDomaines($frs_id);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

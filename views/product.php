@@ -14,6 +14,7 @@ $frs = $products->getFrs($prod_id);
 $cont = $products->getContenant($prod_id);
 $colorProd = $products->getColor($prod_id);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

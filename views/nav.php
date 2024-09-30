@@ -4,6 +4,7 @@ $families = $products->getFamily();
 $regions = $products->getRegion();
 $colors = $products->getColorFamily();
 ?>
+
 <header id="container-fluid">
 	<nav class="navbar navbar-expand-lg">
 		<div id="logo">

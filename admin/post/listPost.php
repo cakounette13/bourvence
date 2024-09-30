@@ -12,8 +12,8 @@ require('../../process/process_permiss.php');
 $post = new PostManager($db);
 
 $posts = $post->getPost();
-
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

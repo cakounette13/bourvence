@@ -5,6 +5,7 @@ require('../class/Stat.php');
 require('../class/StatManager.php');
 require('../process/process_cookie.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

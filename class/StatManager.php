@@ -53,7 +53,6 @@ class StatManager {
 		return $total_visites;
 	}
 	
-
 	// calcul du nombre total de visiteurs
 	public function getNbrVisiteurs() {
 		$sql ='SELECT COUNT(web_user_id) AS total_visiteurs FROM stats';

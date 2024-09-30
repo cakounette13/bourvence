@@ -133,4 +133,3 @@ $contenants = $product->getContenant();
 	<a role="button" class="btn btn-xs btn-product" href="listProduct.php">Retour à la liste</a>
 	<a role="button" class="btn btn-xs btn-product" href="../../index.php">Retour au site</a>
 </div>
-

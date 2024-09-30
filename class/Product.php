@@ -139,7 +139,6 @@ class product {
 		}	
 	}
 
-
 	// Getters
 	public function getProd_id() {
 		return $this->prod_id;

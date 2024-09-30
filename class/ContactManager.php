@@ -38,4 +38,3 @@ class ContactManager {
 		return $row;
 	}
 }
-

@@ -76,4 +76,3 @@ if(isset($_POST['submitUpdateProduct'])) {
 		header('location:../admin/product/updateProduct.php?prod_id='. $data['prod_id']);
 	}
 }
-

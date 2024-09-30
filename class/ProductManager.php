@@ -384,8 +384,7 @@ class ProductManager {
 		return $result;
 	}
 
-	
-	public function getAllDomaines($frs_id="") {
+		public function getAllDomaines($frs_id="") {
 		// Sélection de tous les domaines que l'on veut présenter
 		if(empty($frs_id)) {
 			$sql = "SELECT * FROM fournisseurs WHERE frs_name IN('Alain geoffroy','Arnaud de villeneuve', 'Champagne jean-noel haton', 'Champagne soutiran', 'Domaine clavel', 'Domaine de la goujonne', 'Domaine la chrétienne', 'Chateau de La Greffiere', 'Famille Fabre', 'Grands vins du vieux monde', 'Joseph cartron', 'Leda', 'Lionel Faury', 'Manoir du Capucin - Bayon-Pichon', 'Melody - Marc+Marlene', 'Domaine Des Bormettes', 'Cellier Des Chartreux', 'Les Jardinettes', 'Vinho Selection')";
