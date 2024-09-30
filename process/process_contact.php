@@ -26,7 +26,7 @@ if(isset($_POST['submitContactForm'])) {
 		$result = $contacts->insertContact($contactData);
 		if(mail($to, $subject , $message , $headers)) {
 			$_SESSION['success'] = "Le message a bien été envoyé";
-			header('location:../views/contact.php');
+			header('location:../index.php');
 		}
 	} else {
 		$_SESSION['error'] = "Le message est incomplet";

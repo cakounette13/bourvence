@@ -18,5 +18,3 @@ define('IMAGE_DIR_NAME', 'img');
 define('IMAGE_DIR_PATH', $_SERVER['DOCUMENT_ROOT'] . "/" . WEB_DIR_NAME . "/" . IMAGE_DIR_NAME);
 
 define('WEB_DIR_MAIL', 'cavebourvence@gmail.com');
-
-//CLOUDINARY_URL=cloudinary://<322396361578435>:<IRyDqUl8g6j6Ynvytd7mKBQFgUs>@dh2cbtxmi;
