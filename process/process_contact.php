@@ -27,6 +27,9 @@ if(isset($_POST['submitContactForm'])) {
 		if(mail($to, $subject , $message , $headers)) {
 			$_SESSION['success'] = "Le message a bien été envoyé";
 			header('location:../index.php');
+		} else {
+			$_SESSION['error'] = "Le message n'a pu aboutir. Veuillez réessayer";
+			header('location:../views/contact.php');
 		}
 	} else {
 		$_SESSION['error'] = "Le message est incomplet";

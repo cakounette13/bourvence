@@ -11,8 +11,9 @@ http://localhost/bourvence/moteur_recherche/generate_index.php
 cela générera le fichier d'index
 
 - Pour sendmail:
+Place le dossier sendmail télépchargé dans c:\wamp64\
 Dans wamp, remplacer dans PHP.ini
 SMTP=smtp.gmail.com
 smtp_port=587
 sendmail_from = cavebourvence@gmail.com
-sendmail_path = "C:\wamp64\sendmail\sendmail.exe\"
+sendmail_path = "C:\wamp64\sendmail\sendmail.exe\ -t"
