@@ -19,9 +19,9 @@ if(isset($_POST['submitContactForm'])) {
 		// Construction envoi mail en html
 		$to = WEB_DIR_MAIL;
 		$subject = "Envoi Message Contact du Site";
-		$message = $_POST['contact_msg'];
+		$message = $data['contact_msg'];
 		$headers = "Content-type: text/plain; charset=utf-8\r\n";
-		$headers .= "From: cavebourvence@gmail.com";
+		$headers .= "From: cavebourvence@gmail.com\r\n";
 		$contactData = new Contact($data);
 		$result = $contacts->insertContact($contactData);
 		if(mail($to, $subject , $message , $headers)) {
