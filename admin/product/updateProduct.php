@@ -67,16 +67,18 @@ $contenants = $product2->getContenant();
 			<input class="col-lg-4 col-12" type="hidden" name="prod_id" value="<?= $product[0]['prod_id'] ?>">
 		</div>
 		<div class="form-group row">
-			<label class="col-lg-4 col-12" for="name">nom produit</label>
+			<label class="col-lg-4 col-12" for="name">Nom produit</label>
 			<input class="col-lg-7 col-12" type="text" name="prod_name" value="<?= $product[0]['prod_name'] ?>" id="name" >
 		</div>
 		<div class="form-group row">
 			<label class="col-lg-4 col-12" for="desc">Description produit</label>
-			<textarea class="col-lg-7 col-12" type="textarea" name="prod_desc" rows="4" cols="20" id="desc"><?= $product[0]['prod_desc'] ?></textarea>
+			<textarea class="col-lg-7 col-12" type="textarea" name="prod_desc" rows="10" cols="20" id="desc"><?= $product[0]['prod_desc'] ?></textarea>
 		</div>
-		<div class="form-group row">
-			<input type="hidden" name="old_img" value="<?= $product[0]['prod_img'] ?>">
-			<img class="col-lg-7 col-12" src="../../img/products/<?= $product[0]['prod_img']?>" alt="<?= $product[0]['prod_img'] ?>" width="50" height="50">	
+		<div class="form-group row col-md-6 col-lg-4">
+			<div class="col-lg-7 col-12 card-products">
+				<input type="hidden" name="old_img" value="<?= $product[0]['prod_img'] ?>">
+				<img class="card card-img-top" src="../../img/products/vignettes/<?= $product[0]['prod_img']?>" alt="<?= $product[0]['prod_img'] ?>" max-width="100%" height="auto">	
+			</div>
 		</div>
 		<div class="form-group row">
 			<input class="col-lg-7 col-12" type="file" name="new_img">

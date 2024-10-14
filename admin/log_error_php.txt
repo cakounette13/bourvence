@@ -1,0 +1,5 @@
+[14-Oct-2024 12:37:02 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\wamp64\www\bourvence\process\process_auth.php on line 39
+[14-Oct-2024 12:37:02 UTC] PHP Stack trace:
+[14-Oct-2024 12:37:02 UTC] PHP   1. {main}() C:\wamp64\www\bourvence\login.php:0
+[14-Oct-2024 12:37:02 UTC] PHP   2. require() C:\wamp64\www\bourvence\login.php:7
+[14-Oct-2024 12:37:02 UTC] PHP   3. session_start() C:\wamp64\www\bourvence\process\process_auth.php:39

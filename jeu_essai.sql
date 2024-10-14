@@ -416,7 +416,7 @@ INSERT INTO permiss (perm_id, min_level, action_id) VALUES
 (4, 2, 4),
 (5, 2, 5);
 
-- ----------------------------------------------------------
+-- ----------------------------------------------------------
 /* Table contenants */
 INSERT INTO contenants (cont_id, cont_name) VALUES
 ("0", "Non définie"),
