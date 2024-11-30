@@ -68,7 +68,7 @@ if(isset($_POST['submitUpdateProduct'])) {
 			$data['prod_img'] = $new_img;
 			$_SESSION['success'] .= " et l'image a bien été téléchargée";
 		} else {
-			$_SESSION['error'] .= " mais l'image n'a pas été téléchargée";
+			$_SESSION['error'] .= " et l'image n'a pas été modifiée";
 		}
 		header('location:../admin/product/updateProduct.php?prod_id='. $data['prod_id']);
 	} else {
